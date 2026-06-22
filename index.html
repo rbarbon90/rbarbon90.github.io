@@ -3,60 +3,342 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Portfólio profissional de Rafael Barbon, AI Engineer, Data Scientist e Python Developer focado em LLMs, RAG, agentes de IA e automação."
+  />
   <title>Rafael Barbon | AI Engineer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Rafael Barbon</h1>
-    <p>AI Engineer | Data Scientist | Python Developer</p>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegação principal">
+      <a class="brand" href="#topo" aria-label="Rafael Barbon - início">
+        <span class="brand-mark">RB</span>
+        <span>Rafael Barbon</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <i data-lucide="menu" aria-hidden="true"></i>
+        <span class="sr-only">Abrir menu</span>
+      </button>
+
+      <div class="nav-links" id="menu">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#stack">Stack</a>
+        <a href="#trajetoria">Trajetória</a>
+        <a class="nav-cta" href="#contato">Contato</a>
+      </div>
+    </nav>
   </header>
 
-  <main>
-    <section>
-      <h2>Sobre</h2>
-      <p>
-        Construo soluções de IA aplicadas a problemas reais de negócio,
-        com foco em LLMs, RAG, agentes, automação e engenharia de dados.
-      </p>
+  <main id="conteudo">
+    <section class="hero" id="topo" aria-labelledby="hero-title">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content reveal">
+        <p class="eyebrow">AI Engineer · Data Scientist · Python Developer</p>
+        <h1 id="hero-title">Transformo dados e IA em produtos prontos para gerar impacto.</h1>
+        <p class="hero-copy">
+          Construo aplicações com LLMs, RAG, agentes, automação e engenharia de dados,
+          conectando protótipos inteligentes a entregas confiáveis para negócio.
+        </p>
+
+        <div class="hero-actions" aria-label="Ações principais">
+          <a class="button primary" href="#projetos">
+            <i data-lucide="folder-kanban" aria-hidden="true"></i>
+            Ver projetos
+          </a>
+          <a class="button secondary" href="https://github.com/rbarbon90" target="_blank" rel="noreferrer">
+            <i data-lucide="github" aria-hidden="true"></i>
+            GitHub
+          </a>
+        </div>
+
+        <div class="hero-metrics" aria-label="Destaques profissionais">
+          <div>
+            <strong>LLMs</strong>
+            <span>RAG, agentes e avaliação</span>
+          </div>
+          <div>
+            <strong>Dados</strong>
+            <span>SQL, pipelines e analytics</span>
+          </div>
+          <div>
+            <strong>Deploy</strong>
+            <span>APIs, Docker e cloud-ready</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section>
-      <h2>Projetos</h2>
+    <section class="proof-band" aria-label="Principais competências">
+      <div class="container proof-grid">
+        <span>OpenAI</span>
+        <span>Python</span>
+        <span>FastAPI</span>
+        <span>LangChain</span>
+        <span>PostgreSQL</span>
+        <span>Docker</span>
+      </div>
+    </section>
 
-      <div class="card">
-        <h3>Enterprise RAG Platform</h3>
-        <p>
-          Plataforma para consultar documentos empresariais usando embeddings,
-          banco vetorial e LLMs.
-        </p>
-        <span>Python · FastAPI · Qdrant · OpenAI · Docker</span>
+    <section class="section about-section" id="sobre">
+      <div class="container split">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Sobre</p>
+          <h2>Perfil técnico com foco em produto, clareza e execução.</h2>
+        </div>
+        <div class="about-copy reveal">
+          <p>
+            Sou Rafael Barbon, profissional em transição e evolução para Engenharia de IA,
+            com base em desenvolvimento Python, ciência de dados e automações. Meu foco é
+            construir soluções úteis, mensuráveis e fáceis de evoluir.
+          </p>
+          <p>
+            Tenho interesse especial em aplicações de IA generativa para busca semântica,
+            análise de dados, atendimento interno, geração de insights e otimização de
+            processos operacionais.
+          </p>
+        </div>
       </div>
 
-      <div class="card">
-        <h3>AI Data Analyst</h3>
-        <p>
-          Agente que transforma perguntas em linguagem natural em consultas SQL,
-          gráficos e insights para gestores.
-        </p>
-        <span>Python · LangGraph · PostgreSQL · LLMs</span>
+      <div class="container value-grid">
+        <article class="value-card reveal">
+          <i data-lucide="brain-circuit" aria-hidden="true"></i>
+          <h3>IA aplicada</h3>
+          <p>Desenho fluxos com LLMs, RAG e agentes pensando em precisão, custo, latência e governança.</p>
+        </article>
+        <article class="value-card reveal">
+          <i data-lucide="database-zap" aria-hidden="true"></i>
+          <h3>Dados acionáveis</h3>
+          <p>Transformo dados dispersos em consultas, dashboards, análises e rotinas que apoiam decisão.</p>
+        </article>
+        <article class="value-card reveal">
+          <i data-lucide="rocket" aria-hidden="true"></i>
+          <h3>Entrega ponta a ponta</h3>
+          <p>Prototipo, valido, documento e preparo APIs ou serviços para integrarem ambientes reais.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="projetos">
+      <div class="container section-title reveal">
+        <p class="eyebrow">Projetos selecionados</p>
+        <h2>Cases pensados para demonstrar raciocínio técnico e maturidade de entrega.</h2>
       </div>
 
-      <div class="card">
-        <h3>LLM Evaluation Framework</h3>
-        <p>
-          Sistema para avaliar qualidade, precisão e confiabilidade de aplicações
-          com modelos de linguagem.
-        </p>
-        <span>Python · RAGAS · LangSmith · LLMOps</span>
+      <div class="container projects-grid">
+        <article class="project-card feature-card reveal">
+          <div class="project-topline">
+            <span class="project-label">Projeto principal</span>
+            <span class="project-status">Arquitetura de IA</span>
+          </div>
+          <h3>Enterprise RAG Platform</h3>
+          <p>
+            Plataforma para consulta de documentos empresariais com ingestão, chunking,
+            embeddings, banco vetorial, reranking e respostas rastreáveis com fontes.
+          </p>
+
+          <div class="project-details">
+            <div>
+              <strong>Problema</strong>
+              <span>Conhecimento interno difícil de localizar em PDFs, manuais e bases espalhadas.</span>
+            </div>
+            <div>
+              <strong>Solução</strong>
+              <span>Pipeline RAG com API FastAPI, Qdrant, avaliação de respostas e observabilidade.</span>
+            </div>
+            <div>
+              <strong>Impacto</strong>
+              <span>Redução do tempo de busca e aumento de confiança com citações e métricas.</span>
+            </div>
+          </div>
+
+          <div class="tech-list" aria-label="Tecnologias usadas">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>Qdrant</span>
+            <span>OpenAI</span>
+            <span>Docker</span>
+          </div>
+
+          <div class="project-actions">
+            <a href="https://github.com/rbarbon90" target="_blank" rel="noreferrer">
+              <i data-lucide="external-link" aria-hidden="true"></i>
+              Repositório
+            </a>
+            <a href="#contato">
+              <i data-lucide="message-square" aria-hidden="true"></i>
+              Conversar sobre o case
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <span class="project-label">Analytics</span>
+            <span class="project-status">LLM + SQL</span>
+          </div>
+          <h3>AI Data Analyst</h3>
+          <p>
+            Agente que recebe perguntas em linguagem natural, identifica intenção,
+            gera SQL validado, cria gráficos e devolve insights executivos.
+          </p>
+          <div class="project-details compact">
+            <div>
+              <strong>Diferencial</strong>
+              <span>Camada de validação para evitar consultas inseguras e respostas sem evidência.</span>
+            </div>
+            <div>
+              <strong>Entrega</strong>
+              <span>API, painel simples, logs de decisão e exemplos de perguntas de negócio.</span>
+            </div>
+          </div>
+          <div class="tech-list">
+            <span>LangGraph</span>
+            <span>PostgreSQL</span>
+            <span>Pandas</span>
+            <span>Plotly</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <span class="project-label">LLMOps</span>
+            <span class="project-status">Qualidade</span>
+          </div>
+          <h3>LLM Evaluation Framework</h3>
+          <p>
+            Framework para avaliar respostas de aplicações com LLMs por precisão,
+            relevância, fidelidade ao contexto, segurança e custo por execução.
+          </p>
+          <div class="project-details compact">
+            <div>
+              <strong>Diferencial</strong>
+              <span>Conjunto de testes com datasets, scorecards e comparação entre prompts/modelos.</span>
+            </div>
+            <div>
+              <strong>Entrega</strong>
+              <span>Relatórios versionados para apoiar melhoria contínua de aplicações de IA.</span>
+            </div>
+          </div>
+          <div class="tech-list">
+            <span>RAGAS</span>
+            <span>LangSmith</span>
+            <span>Pytest</span>
+            <span>MLflow</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section stack-section" id="stack">
+      <div class="container section-title reveal">
+        <p class="eyebrow">Stack</p>
+        <h2>Ferramentas que uso para sair do notebook e chegar em aplicações utilizáveis.</h2>
+      </div>
+
+      <div class="container stack-grid">
+        <article class="stack-card reveal">
+          <h3>IA generativa</h3>
+          <ul>
+            <li>OpenAI API, embeddings e function calling</li>
+            <li>RAG, reranking, prompt engineering e evals</li>
+            <li>LangChain, LangGraph e LangSmith</li>
+          </ul>
+        </article>
+        <article class="stack-card reveal">
+          <h3>Backend e dados</h3>
+          <ul>
+            <li>Python, FastAPI, Pydantic e APIs REST</li>
+            <li>PostgreSQL, SQL, Pandas e modelagem analítica</li>
+            <li>ETL, automações e integrações com serviços externos</li>
+          </ul>
+        </article>
+        <article class="stack-card reveal">
+          <h3>Entrega e qualidade</h3>
+          <ul>
+            <li>Docker, Git, testes automatizados e documentação</li>
+            <li>Monitoramento de custo, latência e qualidade</li>
+            <li>Deploy cloud-ready e boas práticas de segurança</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section timeline-section" id="trajetoria">
+      <div class="container split">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Trajetória</p>
+          <h2>Uma evolução orientada por problemas reais, não por buzzwords.</h2>
+        </div>
+
+        <div class="timeline reveal">
+          <article>
+            <span>Agora</span>
+            <h3>Engenharia de IA aplicada</h3>
+            <p>Construção de projetos com LLMs, RAG, agentes, avaliação e APIs para portfólio profissional.</p>
+          </article>
+          <article>
+            <span>Base técnica</span>
+            <h3>Dados, Python e automação</h3>
+            <p>Uso de Python, SQL e bibliotecas de dados para estruturar análises e rotinas reutilizáveis.</p>
+          </article>
+          <article>
+            <span>Próximo passo</span>
+            <h3>Vaga em IA, dados ou backend Python</h3>
+            <p>Busca por oportunidades onde eu possa contribuir com velocidade, aprendizado e boa engenharia.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contato">
+      <div class="container contact-panel reveal">
+        <div>
+          <p class="eyebrow">Contato</p>
+          <h2>Vamos conversar sobre uma oportunidade?</h2>
+          <p>
+            Estou aberto a vagas e projetos nas áreas de Engenharia de IA, Ciência de Dados,
+            automação e desenvolvimento Python.
+          </p>
+        </div>
+
+        <div class="contact-actions" aria-label="Canais de contato">
+          <a class="button primary" href="mailto:rbarbon90@gmail.com">
+            <i data-lucide="mail" aria-hidden="true"></i>
+            Enviar e-mail
+          </a>
+          <a class="button secondary light" href="https://www.linkedin.com/in/rafael-barbon/" target="_blank" rel="noreferrer">
+            <i data-lucide="linkedin" aria-hidden="true"></i>
+            LinkedIn
+          </a>
+          <a class="button secondary light" href="https://github.com/rbarbon90" target="_blank" rel="noreferrer">
+            <i data-lucide="github" aria-hidden="true"></i>
+            GitHub
+          </a>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>GitHub: github.com/rbarbon90</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Rafael Barbon</span>
+      <a href="#topo">Voltar ao topo</a>
+    </div>
   </footer>
 
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
