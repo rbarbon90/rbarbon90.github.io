@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Projetos de AI Engineer de Rafael Barbon: LLMs, RAG, agentes, avaliação, FastAPI, bancos vetoriais e aplicações de IA."
+  />
+  <title>AI Engineer | Rafael Barbon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegação principal">
+      <a class="brand" href="index.html#topo" aria-label="Rafael Barbon - início">
+        <span class="brand-mark">
+          <img src="assets/profile-photo.jpg" alt="" onerror="this.remove()" />
+          RB
+        </span>
+        <span>Rafael Barbon</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <i data-lucide="menu" aria-hidden="true"></i>
+        <span class="sr-only">Abrir menu</span>
+      </button>
+
+      <div class="nav-links" id="menu">
+        <a href="index.html#topo">Início</a>
+        <a href="index.html#sobre">Sobre</a>
+        <a href="index.html#projetos">Projetos</a>
+        <a href="index.html#stack">Stack</a>
+        <a class="nav-cta" href="index.html#contato">Contato</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-hero ai-hero" id="topo" aria-labelledby="page-title">
+      <div class="container page-hero-content reveal">
+        <a class="back-link" href="index.html#projetos">
+          <i data-lucide="arrow-left" aria-hidden="true"></i>
+          Voltar para projetos
+        </a>
+        <p class="eyebrow">Projetos por área</p>
+        <h1 id="page-title">AI Engineer</h1>
+        <p class="hero-copy">
+          Projetos focados em transformar LLMs, busca semântica, agentes e avaliação
+          em aplicações confiáveis para uso real.
+        </p>
+        <nav class="trail-tabs trail-tabs-dark" aria-label="Navegação entre áreas de projeto">
+          <a class="active" href="ai-engineering.html">AI Engineer</a>
+          <a href="data-science.html">Data Scientist</a>
+          <a href="data-engineering.html">Data Engineer</a>
+          <a href="python-automation.html">Python Developer</a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Foco dos projetos</p>
+          <h2>Arquitetura de IA com precisão, rastreabilidade e entrega</h2>
+        </div>
+        <div class="about-copy reveal">
+          <p>
+            Esta área reúne projetos em que a IA generativa precisa sair do protótipo
+            e virar fluxo de produto: APIs, bancos vetoriais, guardrails, métricas,
+            avaliação e observabilidade.
+          </p>
+          <p>
+            O objetivo é mostrar maturidade técnica para lidar com custo, latência,
+            qualidade das respostas, fontes, segurança e integração com sistemas existentes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section">
+      <div class="container section-title reveal">
+        <p class="eyebrow">Projetos de AI Engineer</p>
+        <h2>Projetos para demonstrar arquitetura, qualidade e produto com LLMs</h2>
+      </div>
+
+      <div class="container catalog-grid">
+        <article class="project-card feature-card reveal">
+          <div class="project-topline">
+            <span class="project-label">Projeto principal</span>
+            <span class="project-status">RAG</span>
+          </div>
+          <h3>Enterprise RAG Platform</h3>
+          <p>
+            Plataforma para consulta de documentos empresariais com ingestão, chunking,
+            embeddings, banco vetorial, reranking e respostas rastreáveis com fontes.
+          </p>
+          <div class="project-details">
+            <div>
+              <strong>Problema</strong>
+              <span>Conhecimento interno disperso em PDFs, manuais, políticas e bases pouco pesquisáveis.</span>
+            </div>
+            <div>
+              <strong>Solução</strong>
+              <span>Pipeline RAG com FastAPI, Qdrant, embeddings, reranking, citações e logs de avaliação.</span>
+            </div>
+            <div>
+              <strong>Impacto</strong>
+              <span>Busca mais rápida, respostas auditáveis e caminho claro para evolução com métricas.</span>
+            </div>
+          </div>
+          <div class="tech-list">
+            <span>Python</span>
+            <span>FastAPI</span>
+            <span>Qdrant</span>
+            <span>OpenAI</span>
+            <span>Docker</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <span class="project-label">Agentes</span>
+            <span class="project-status">LLM + Tools</span>
+          </div>
+          <h3>AI Data Analyst</h3>
+          <p>
+            Agente analítico que interpreta perguntas, chama ferramentas, valida SQL e
+            devolve gráficos com explicação executiva.
+          </p>
+          <div class="project-details compact">
+            <div>
+              <strong>Diferencial</strong>
+              <span>Separação entre raciocínio, execução de consulta, validação e resposta final.</span>
+            </div>
+            <div>
+              <strong>Entrega</strong>
+              <span>API com logs de decisão, exemplos de uso e limites claros para consultas seguras.</span>
+            </div>
+          </div>
+          <div class="tech-list">
+            <span>LangGraph</span>
+            <span>PostgreSQL</span>
+            <span>Pydantic</span>
+            <span>Plotly</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <span class="project-label">LLMOps</span>
+            <span class="project-status">Qualidade</span>
+          </div>
+          <h3>LLM Evaluation Framework</h3>
+          <p>
+            Framework para comparar prompts, modelos e versões de aplicação por precisão,
+            relevância, fidelidade ao contexto, segurança e custo.
+          </p>
+          <div class="project-details compact">
+            <div>
+              <strong>Diferencial</strong>
+              <span>Scorecards versionados para evitar regressão de qualidade entre mudanças.</span>
+            </div>
+            <div>
+              <strong>Entrega</strong>
+              <span>Dataset de avaliação, testes automatizados e relatório de melhoria contínua.</span>
+            </div>
+          </div>
+          <div class="tech-list">
+            <span>RAGAS</span>
+            <span>LangSmith</span>
+            <span>Pytest</span>
+            <span>MLflow</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <span class="project-label">Assistente</span>
+            <span class="project-status">Suporte interno</span>
+          </div>
+          <h3>Internal Support Agent</h3>
+          <p>
+            Assistente para atendimento interno com base de conhecimento, classificação
+            de intenção, respostas padronizadas e escalonamento para especialistas.
+          </p>
+          <div class="project-details compact">
+            <div>
+              <strong>Diferencial</strong>
+              <span>Combina RAG, roteamento de intenção e limites de resposta para reduzir alucinação.</span>
+            </div>
+            <div>
+              <strong>Entrega</strong>
+              <span>Protótipo com fluxo conversacional, logs e painel de perguntas não respondidas.</span>
+            </div>
+          </div>
+          <div class="tech-list">
+            <span>OpenAI</span>
+            <span>FastAPI</span>
+            <span>Redis</span>
+            <span>PostgreSQL</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section stack-section">
+      <div class="container section-title reveal">
+        <p class="eyebrow">Stack aplicada</p>
+        <h2>Ferramentas usadas nestes projetos</h2>
+      </div>
+      <div class="container stack-grid">
+        <article class="stack-card reveal">
+          <h3>LLMs e RAG</h3>
+          <ul>
+            <li>OpenAI API, embeddings e function calling</li>
+            <li>Chunking, reranking, bancos vetoriais e citações</li>
+            <li>Prompt engineering orientado a tarefas e contexto</li>
+          </ul>
+        </article>
+        <article class="stack-card reveal">
+          <h3>Arquitetura</h3>
+          <ul>
+            <li>FastAPI, Pydantic, filas e integrações</li>
+            <li>LangChain, LangGraph e desenho de agentes</li>
+            <li>Docker, configuração por ambiente e deploy cloud-ready</li>
+          </ul>
+        </article>
+        <article class="stack-card reveal">
+          <h3>Qualidade</h3>
+          <ul>
+            <li>Evals, datasets, testes e scorecards</li>
+            <li>Observabilidade de custo, latência e erro</li>
+            <li>Guardrails, rastreabilidade e análise de falhas</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Rafael Barbon</span>
+      <a href="#topo">Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

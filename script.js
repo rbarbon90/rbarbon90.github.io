@@ -4,6 +4,20 @@ const links = document.querySelectorAll(".nav-links a");
 const sections = document.querySelectorAll("section[id]");
 const year = document.querySelector("#year");
 
+const currentPath = window.location.pathname.replace(/\/$/, "/index.html");
+const samePageLinks = Array.from(links).filter((link) => {
+  const href = link.getAttribute("href");
+
+  if (!href) {
+    return false;
+  }
+
+  const url = new URL(href, window.location.href);
+  const linkPath = url.pathname.replace(/\/$/, "/index.html");
+
+  return linkPath === currentPath && url.hash;
+});
+
 if (window.lucide) {
   window.lucide.createIcons();
 }
@@ -52,25 +66,28 @@ document.querySelectorAll(".reveal").forEach((element) => {
   revealObserver.observe(element);
 });
 
-const activeObserver = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (!entry.isIntersecting) {
-        return;
-      }
+if (samePageLinks.length > 0) {
+  const activeObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) {
+          return;
+        }
 
-      links.forEach((link) => {
-        const isActive = link.getAttribute("href") === `#${entry.target.id}`;
-        link.classList.toggle("active", isActive);
+        samePageLinks.forEach((link) => {
+          const url = new URL(link.getAttribute("href"), window.location.href);
+          const isActive = url.hash === `#${entry.target.id}`;
+          link.classList.toggle("active", isActive);
+        });
       });
-    });
-  },
-  {
-    rootMargin: "-35% 0px -55% 0px",
-    threshold: 0
-  }
-);
+    },
+    {
+      rootMargin: "-35% 0px -55% 0px",
+      threshold: 0
+    }
+  );
 
-sections.forEach((section) => {
-  activeObserver.observe(section);
-});
+  sections.forEach((section) => {
+    activeObserver.observe(section);
+  });
+}

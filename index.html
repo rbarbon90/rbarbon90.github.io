@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
     name="description"
-    content="Portfólio profissional de Rafael Barbon, AI Engineer, Data Scientist e Python Developer focado em LLMs, RAG, agentes de IA e automação."
+    content="Portfólio profissional de Rafael Barbon, AI Engineer, Data Scientist, Data Engineer e Python Developer focado em LLMs, RAG, dados, pipelines e automação."
   />
-  <title>Rafael Barbon | AI Engineer Portfolio</title>
+  <title>Rafael Barbon | AI Engineer, Data Scientist, Data Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -21,8 +21,11 @@
 
   <header class="site-header">
     <nav class="nav" aria-label="Navegação principal">
-      <a class="brand" href="#topo" aria-label="Rafael Barbon - início">
-        <span class="brand-mark">RB</span>
+      <a class="brand" href="index.html#topo" aria-label="Rafael Barbon - início">
+        <span class="brand-mark">
+          <img src="assets/profile-photo.jpg" alt="" onerror="this.remove()" />
+          RB
+        </span>
         <span>Rafael Barbon</span>
       </a>
 
@@ -32,11 +35,11 @@
       </button>
 
       <div class="nav-links" id="menu">
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#stack">Stack</a>
-        <a href="#trajetoria">Trajetória</a>
-        <a class="nav-cta" href="#contato">Contato</a>
+        <a href="index.html#topo">Início</a>
+        <a href="index.html#sobre">Sobre</a>
+        <a href="index.html#projetos">Projetos</a>
+        <a href="index.html#stack">Stack</a>
+        <a class="nav-cta" href="index.html#contato">Contato</a>
       </div>
     </nav>
   </header>
@@ -45,15 +48,19 @@
     <section class="hero" id="topo" aria-labelledby="hero-title">
       <div class="hero-overlay"></div>
       <div class="container hero-content reveal">
-        <p class="eyebrow">AI Engineer · Data Scientist · Python Developer</p>
+        <p class="eyebrow">AI Engineer · Data Scientist · Data Engineer · Python Developer</p>
         <h1 id="hero-title">Transformo dados e IA em produtos prontos para gerar impacto</h1>
         <p class="hero-copy">
-          Construo aplicações com LLMs, RAG, agentes, automação e engenharia de dados,
+          Construo aplicações com LLMs, RAG, agentes, automação e data engineering,
           conectando protótipos inteligentes a entregas confiáveis para negócio.
         </p>
 
         <div class="hero-actions" aria-label="Ações principais">
-          <a class="button primary" href="#projetos">
+          <a class="button primary" href="#sobre">
+            <i data-lucide="user-round" aria-hidden="true"></i>
+            Conhecer perfil
+          </a>
+          <a class="button secondary" href="#projetos">
             <i data-lucide="folder-kanban" aria-hidden="true"></i>
             Ver projetos
           </a>
@@ -65,29 +72,22 @@
 
         <div class="hero-metrics" aria-label="Destaques profissionais">
           <div>
-            <strong>LLMs</strong>
-            <span>RAG, agentes e avaliação</span>
+            <strong>AI Engineer</strong>
+            <span>Busca, análise e atendimento interno</span>
           </div>
           <div>
-            <strong>Dados</strong>
-            <span>SQL, pipelines e analytics</span>
+            <strong>Data Scientist</strong>
+            <span>Indicadores, previsões e insights</span>
           </div>
           <div>
-            <strong>Deploy</strong>
-            <span>APIs, Docker e cloud-ready</span>
+            <strong>Data Engineer</strong>
+            <span>Pipelines, qualidade e integração</span>
+          </div>
+          <div>
+            <strong>Python Developer</strong>
+            <span>APIs, automações e serviços</span>
           </div>
         </div>
-      </div>
-    </section>
-
-    <section class="proof-band" aria-label="Principais competências">
-      <div class="container proof-grid">
-        <span>OpenAI</span>
-        <span>Python</span>
-        <span>FastAPI</span>
-        <span>LangChain</span>
-        <span>PostgreSQL</span>
-        <span>Docker</span>
       </div>
     </section>
 
@@ -99,8 +99,8 @@
         </div>
         <div class="about-copy reveal">
           <p>
-            Sou Rafael Barbon, atuo na interseção entre Engenharia de IA, desenvolvimento
-            Python, ciência de dados e automações. Meu foco é construir soluções úteis,
+            Sou Rafael Barbon, atuo na interseção entre AI Engineering, Data Science,
+            Data Engineering, Python Development e automações. Meu foco é construir soluções úteis,
             mensuráveis e fáceis de evoluir.
           </p>
           <p>
@@ -113,131 +113,73 @@
 
       <div class="container value-grid">
         <article class="value-card reveal">
-          <i data-lucide="brain-circuit" aria-hidden="true"></i>
-          <h3>IA aplicada</h3>
-          <p>Desenho fluxos com LLMs, RAG e agentes pensando em precisão, custo, latência e governança.</p>
+          <i data-lucide="search-check" aria-hidden="true"></i>
+          <h3>Problema antes da ferramenta</h3>
+          <p>Parto do contexto, das restrições e do impacto esperado antes de escolher modelo, pipeline ou arquitetura.</p>
         </article>
         <article class="value-card reveal">
-          <i data-lucide="database-zap" aria-hidden="true"></i>
-          <h3>Dados acionáveis</h3>
-          <p>Transformo dados dispersos em consultas, dashboards, análises e rotinas que apoiam decisão.</p>
+          <i data-lucide="network" aria-hidden="true"></i>
+          <h3>Dados como base do produto</h3>
+          <p>Organizo fontes, métricas, qualidade e contexto para que análises, automações e IA tenham sustentação.</p>
         </article>
         <article class="value-card reveal">
-          <i data-lucide="rocket" aria-hidden="true"></i>
-          <h3>Entrega ponta a ponta</h3>
-          <p>Prototipo, valido, documento e preparo APIs ou serviços para integrarem ambientes reais.</p>
+          <i data-lucide="ship-wheel" aria-hidden="true"></i>
+          <h3>Entrega pensada para evoluir</h3>
+          <p>Prototipo com clareza, valido hipóteses e preparo APIs, rotinas e documentação para uso real.</p>
         </article>
       </div>
     </section>
 
-    <section class="section projects-section" id="projetos">
+    <section class="section pathways-section" id="projetos">
       <div class="container section-title reveal">
-        <p class="eyebrow">Projetos selecionados</p>
-        <h2>Cases pensados para demonstrar raciocínio técnico e maturidade de entrega</h2>
+        <p class="eyebrow">Projetos por perfil</p>
+        <h2>Escolha um perfil para ver projetos, decisões técnicas e entregas relacionadas</h2>
       </div>
 
-      <div class="container projects-grid">
-        <article class="project-card feature-card reveal">
-          <div class="project-topline">
-            <span class="project-label">Projeto principal</span>
-            <span class="project-status">Arquitetura de IA</span>
-          </div>
-          <h3>Enterprise RAG Platform</h3>
+      <div class="container pathways-grid">
+        <a class="pathway-card reveal" href="ai-engineering.html">
+          <i data-lucide="brain-circuit" aria-hidden="true"></i>
+          <span class="project-label">LLMs e RAG</span>
+          <h3>AI Engineer</h3>
           <p>
-            Plataforma para consulta de documentos empresariais com ingestão, chunking,
-            embeddings, banco vetorial, reranking e respostas rastreáveis com fontes.
+            LLMs, RAG, agentes, avaliação, APIs inteligentes e produtos que conectam IA
+            generativa a fluxos reais de negócio.
           </p>
+          <strong>Ver projetos</strong>
+        </a>
 
-          <div class="project-details">
-            <div>
-              <strong>Problema</strong>
-              <span>Conhecimento interno difícil de localizar em PDFs, manuais e bases espalhadas.</span>
-            </div>
-            <div>
-              <strong>Solução</strong>
-              <span>Pipeline RAG com API FastAPI, Qdrant, avaliação de respostas e observabilidade.</span>
-            </div>
-            <div>
-              <strong>Impacto</strong>
-              <span>Redução do tempo de busca e aumento de confiança com citações e métricas.</span>
-            </div>
-          </div>
-
-          <div class="tech-list" aria-label="Tecnologias usadas">
-            <span>Python</span>
-            <span>FastAPI</span>
-            <span>Qdrant</span>
-            <span>OpenAI</span>
-            <span>Docker</span>
-          </div>
-
-          <div class="project-actions">
-            <a href="https://github.com/rbarbon90" target="_blank" rel="noreferrer">
-              <i data-lucide="external-link" aria-hidden="true"></i>
-              Repositório
-            </a>
-            <a href="#contato">
-              <i data-lucide="message-square" aria-hidden="true"></i>
-              Conversar sobre o case
-            </a>
-          </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-topline">
-            <span class="project-label">Analytics</span>
-            <span class="project-status">LLM + SQL</span>
-          </div>
-          <h3>AI Data Analyst</h3>
+        <a class="pathway-card reveal" href="data-science.html">
+          <i data-lucide="chart-line" aria-hidden="true"></i>
+          <span class="project-label">Analytics e ML</span>
+          <h3>Data Scientist</h3>
           <p>
-            Agente que recebe perguntas em linguagem natural, identifica intenção,
-            gera SQL validado, cria gráficos e devolve insights executivos.
+            Análises, modelos preditivos, segmentação, experimentos e storytelling com dados
+            para apoiar decisões.
           </p>
-          <div class="project-details compact">
-            <div>
-              <strong>Diferencial</strong>
-              <span>Camada de validação para evitar consultas inseguras e respostas sem evidência.</span>
-            </div>
-            <div>
-              <strong>Entrega</strong>
-              <span>API, painel simples, logs de decisão e exemplos de perguntas de negócio.</span>
-            </div>
-          </div>
-          <div class="tech-list">
-            <span>LangGraph</span>
-            <span>PostgreSQL</span>
-            <span>Pandas</span>
-            <span>Plotly</span>
-          </div>
-        </article>
+          <strong>Ver projetos</strong>
+        </a>
 
-        <article class="project-card reveal">
-          <div class="project-topline">
-            <span class="project-label">LLMOps</span>
-            <span class="project-status">Qualidade</span>
-          </div>
-          <h3>LLM Evaluation Framework</h3>
+        <a class="pathway-card reveal" href="data-engineering.html">
+          <i data-lucide="database-zap" aria-hidden="true"></i>
+          <span class="project-label">Pipelines e ETL</span>
+          <h3>Data Engineer</h3>
           <p>
-            Framework para avaliar respostas de aplicações com LLMs por precisão,
-            relevância, fidelidade ao contexto, segurança e custo por execução.
+            Pipelines, modelagem, qualidade de dados, integrações e bases preparadas
+            para analytics, IA e operação.
           </p>
-          <div class="project-details compact">
-            <div>
-              <strong>Diferencial</strong>
-              <span>Conjunto de testes com datasets, scorecards e comparação entre prompts/modelos.</span>
-            </div>
-            <div>
-              <strong>Entrega</strong>
-              <span>Relatórios versionados para apoiar melhoria contínua de aplicações de IA.</span>
-            </div>
-          </div>
-          <div class="tech-list">
-            <span>RAGAS</span>
-            <span>LangSmith</span>
-            <span>Pytest</span>
-            <span>MLflow</span>
-          </div>
-        </article>
+          <strong>Ver projetos</strong>
+        </a>
+
+        <a class="pathway-card reveal" href="python-automation.html">
+          <i data-lucide="workflow" aria-hidden="true"></i>
+          <span class="project-label">APIs e automação</span>
+          <h3>Python Developer</h3>
+          <p>
+            APIs, integrações, pipelines, rotinas operacionais e automações Python com foco
+            em confiabilidade.
+          </p>
+          <strong>Ver projetos</strong>
+        </a>
       </div>
     </section>
 
@@ -257,10 +199,10 @@
           </ul>
         </article>
         <article class="stack-card reveal">
-          <h3>Backend e dados</h3>
+          <h3>Data Engineering e backend</h3>
           <ul>
             <li>Python, FastAPI, Pydantic e APIs REST</li>
-            <li>PostgreSQL, SQL, Pandas e modelagem analítica</li>
+            <li>PostgreSQL, SQL, Pandas e modelagem de dados</li>
             <li>ETL, automações e integrações com serviços externos</li>
           </ul>
         </article>
@@ -275,28 +217,28 @@
       </div>
     </section>
 
-    <section class="section timeline-section" id="trajetoria">
+    <section class="section timeline-section" id="processo">
       <div class="container split">
         <div class="section-heading reveal">
-          <p class="eyebrow">Trajetória</p>
-          <h2>Uma evolução orientada por problemas reais, não por buzzwords.</h2>
+          <p class="eyebrow">Processo</p>
+          <h2>Como transformo uma ideia técnica em uma entrega utilizável.</h2>
         </div>
 
         <div class="timeline reveal">
           <article>
-            <span>Agora</span>
-            <h3>Engenharia de IA aplicada</h3>
-            <p>Construção de soluções com LLMs, RAG, agentes, avaliação e APIs conectadas a problemas reais.</p>
+            <span>01</span>
+            <h3>Diagnóstico do problema</h3>
+            <p>Entendo objetivo, dados disponíveis, restrições, usuários e critério de sucesso antes de escolher a solução.</p>
           </article>
           <article>
-            <span>Base técnica</span>
-            <h3>Dados, Python e automação</h3>
-            <p>Uso de Python, SQL e bibliotecas de dados para estruturar análises e rotinas reutilizáveis</p>
+            <span>02</span>
+            <h3>Protótipo validável</h3>
+            <p>Construo uma versão pequena o suficiente para testar rápido e clara o suficiente para medir valor.</p>
           </article>
           <article>
-            <span>Em evolução</span>
-            <h3>Produtos de IA, dados e backend Python</h3>
-            <p>Aprofundamento contínuo em arquiteturas aplicadas, qualidade de entrega e integrações escaláveis.</p>
+            <span>03</span>
+            <h3>Entrega evolutiva</h3>
+            <p>Organizo código, dados, documentação e monitoramento para que a solução possa crescer com segurança.</p>
           </article>
         </div>
       </div>

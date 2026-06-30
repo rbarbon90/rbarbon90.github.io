@@ -1,0 +1,259 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Projetos de Data Scientist de Rafael Barbon: analytics, modelagem, SQL, Python, segmentação, previsão e storytelling com dados."
+  />
+  <title>Data Scientist | Rafael Barbon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegação principal">
+      <a class="brand" href="index.html#topo" aria-label="Rafael Barbon - início">
+        <span class="brand-mark">
+          <img src="assets/profile-photo.jpg" alt="" onerror="this.remove()" />
+          RB
+        </span>
+        <span>Rafael Barbon</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <i data-lucide="menu" aria-hidden="true"></i>
+        <span class="sr-only">Abrir menu</span>
+      </button>
+
+      <div class="nav-links" id="menu">
+        <a href="index.html#topo">Início</a>
+        <a href="index.html#sobre">Sobre</a>
+        <a href="index.html#projetos">Projetos</a>
+        <a href="index.html#stack">Stack</a>
+        <a class="nav-cta" href="index.html#contato">Contato</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-hero data-hero" id="topo" aria-labelledby="page-title">
+      <div class="container page-hero-content reveal">
+        <a class="back-link" href="index.html#projetos">
+          <i data-lucide="arrow-left" aria-hidden="true"></i>
+          Voltar para projetos
+        </a>
+        <p class="eyebrow">Projetos por área</p>
+        <h1 id="page-title">Data Scientist</h1>
+        <p class="hero-copy">
+          Projetos voltados a análise, modelagem, exploração de dados e criação de
+          insights acionáveis para decisões de negócio.
+        </p>
+        <nav class="trail-tabs trail-tabs-dark" aria-label="Navegação entre áreas de projeto">
+          <a href="ai-engineering.html">AI Engineer</a>
+          <a class="active" href="data-science.html">Data Scientist</a>
+          <a href="data-engineering.html">Data Engineer</a>
+          <a href="python-automation.html">Python Developer</a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Foco dos projetos</p>
+          <h2>Do dado bruto ao insight que orienta uma decisão</h2>
+        </div>
+        <div class="about-copy reveal">
+          <p>
+            Esta área agrupa projetos em que o centro do trabalho é entender dados,
+            formular hipóteses, construir métricas, validar padrões e comunicar resultados
+            de forma clara.
+          </p>
+          <p>
+            A proposta é mostrar raciocínio analítico, domínio de Python e SQL, cuidado
+            com validação e capacidade de transformar exploração em recomendação prática.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section">
+      <div class="container section-title reveal">
+        <p class="eyebrow">Projetos de Data Scientist</p>
+        <h2>Projetos para demonstrar análise, modelagem e comunicação de resultados</h2>
+      </div>
+
+      <div class="container catalog-grid">
+        <article class="project-card feature-card reveal">
+          <div class="project-topline">
+            <span class="project-label">Analytics</span>
+            <span class="project-status">LLM + SQL</span>
+          </div>
+          <h3>AI Data Analyst</h3>
+          <p>
+            Agente que recebe perguntas em linguagem natural, gera SQL validado,
+            consulta dados estruturados, cria gráficos e devolve insights executivos.
+          </p>
+          <div class="project-details">
+            <div>
+              <strong>Problema</strong>
+              <span>Equipes dependem de consultas manuais e análises repetitivas para responder perguntas recorrentes.</span>
+            </div>
+            <div>
+              <strong>Solução</strong>
+              <span>Fluxo com interpretação de intenção, geração segura de SQL, visualização e resumo analítico.</span>
+            </div>
+            <div>
+              <strong>Impacto</strong>
+              <span>Reduz tempo de exploração e ajuda a padronizar respostas baseadas em evidência.</span>
+            </div>
+          </div>
+          <div class="tech-list">
+            <span>Python</span>
+            <span>SQL</span>
+            <span>PostgreSQL</span>
+            <span>Pandas</span>
+            <span>Plotly</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <span class="project-label">Previsão</span>
+            <span class="project-status">Machine Learning</span>
+          </div>
+          <h3>Customer Churn Prediction</h3>
+          <p>
+            Modelo para identificar clientes com maior risco de cancelamento e apontar
+            variáveis que explicam o comportamento.
+          </p>
+          <div class="project-details compact">
+            <div>
+              <strong>Diferencial</strong>
+              <span>Pipeline com limpeza, engenharia de atributos, validação e interpretação do modelo.</span>
+            </div>
+            <div>
+              <strong>Entrega</strong>
+              <span>Notebook analítico, métricas comparativas e recomendações para retenção.</span>
+            </div>
+          </div>
+          <div class="tech-list">
+            <span>Scikit-learn</span>
+            <span>Pandas</span>
+            <span>Seaborn</span>
+            <span>SHAP</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <span class="project-label">Segmentação</span>
+            <span class="project-status">Clustering</span>
+          </div>
+          <h3>Customer Segmentation</h3>
+          <p>
+            Agrupamento de clientes por comportamento de compra para apoiar estratégias
+            de marketing, oferta e atendimento.
+          </p>
+          <div class="project-details compact">
+            <div>
+              <strong>Diferencial</strong>
+              <span>Comparação de clusters, leitura de perfis e tradução dos grupos em ações de negócio.</span>
+            </div>
+            <div>
+              <strong>Entrega</strong>
+              <span>Dashboard exploratório com indicadores por segmento e recomendações por público.</span>
+            </div>
+          </div>
+          <div class="tech-list">
+            <span>K-Means</span>
+            <span>Python</span>
+            <span>Plotly</span>
+            <span>Power BI</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <span class="project-label">Forecast</span>
+            <span class="project-status">Séries temporais</span>
+          </div>
+          <h3>Sales Forecast Dashboard</h3>
+          <p>
+            Previsão de vendas com histórico temporal, sazonalidade, comparação entre
+            cenários e visualização para acompanhamento mensal.
+          </p>
+          <div class="project-details compact">
+            <div>
+              <strong>Diferencial</strong>
+              <span>Combina análise exploratória, baseline simples e métricas de erro interpretáveis.</span>
+            </div>
+            <div>
+              <strong>Entrega</strong>
+              <span>Relatório com tendência, sazonalidade, intervalo de confiança e próximos passos.</span>
+            </div>
+          </div>
+          <div class="tech-list">
+            <span>Statsmodels</span>
+            <span>Prophet</span>
+            <span>Pandas</span>
+            <span>Matplotlib</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section stack-section">
+      <div class="container section-title reveal">
+        <p class="eyebrow">Stack aplicada</p>
+        <h2>Ferramentas usadas nestes projetos</h2>
+      </div>
+      <div class="container stack-grid">
+        <article class="stack-card reveal">
+          <h3>Análise</h3>
+          <ul>
+            <li>Python, Pandas, NumPy e SQL</li>
+            <li>Exploração, limpeza e engenharia de atributos</li>
+            <li>Métricas, coortes e análise de comportamento</li>
+          </ul>
+        </article>
+        <article class="stack-card reveal">
+          <h3>Modelagem</h3>
+          <ul>
+            <li>Scikit-learn, validação cruzada e pipelines</li>
+            <li>Classificação, regressão, clusterização e forecast</li>
+            <li>Interpretação, erro, viés e limitações</li>
+          </ul>
+        </article>
+        <article class="stack-card reveal">
+          <h3>Comunicação</h3>
+          <ul>
+            <li>Plotly, Matplotlib, dashboards e relatórios</li>
+            <li>Storytelling com dados e recomendações acionáveis</li>
+            <li>Documentação clara de premissas e próximos passos</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Rafael Barbon</span>
+      <a href="#topo">Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

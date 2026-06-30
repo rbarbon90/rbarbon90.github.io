@@ -105,15 +105,26 @@ a {
 }
 
 .brand-mark {
-  width: 42px;
-  height: 42px;
+  position: relative;
+  width: 54px;
+  height: 54px;
   display: inline-grid;
   place-items: center;
+  overflow: hidden;
   color: #ffffff;
   background: var(--ink);
   border: 2px solid var(--teal);
-  border-radius: var(--radius);
-  font-size: 0.9rem;
+  border-radius: 50%;
+  font-size: 0.95rem;
+}
+
+.brand-mark img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 34%;
 }
 
 .nav-links {
@@ -165,7 +176,9 @@ a {
 .nav-toggle svg,
 .button svg,
 .project-actions svg,
-.value-card svg {
+.value-card svg,
+.pathway-card svg,
+.back-link svg {
   width: 19px;
   height: 19px;
   flex: 0 0 auto;
@@ -193,7 +206,7 @@ a {
 .hero-content {
   position: relative;
   z-index: 1;
-  max-width: 770px;
+  max-width: 880px;
   padding: clamp(58px, 8vw, 94px) 0 clamp(46px, 7vw, 78px);
 }
 
@@ -241,7 +254,7 @@ h3 {
 }
 
 .hero-copy {
-  max-width: 690px;
+  max-width: 760px;
   margin: 24px 0 0;
   color: rgba(255, 255, 255, 0.84);
   font-size: clamp(1.02rem, 2vw, 1.24rem);
@@ -307,9 +320,9 @@ h3 {
 }
 
 .hero-metrics {
-  width: min(100%, 760px);
+  width: min(100%, 920px);
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1px;
   margin-top: 40px;
   overflow: hidden;
@@ -335,30 +348,6 @@ h3 {
   margin-top: 8px;
   color: rgba(255, 255, 255, 0.78);
   font-size: 0.91rem;
-}
-
-.proof-band {
-  padding: 18px 0;
-  background: var(--ink);
-  color: rgba(255, 255, 255, 0.84);
-}
-
-.proof-grid {
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 12px;
-  align-items: center;
-}
-
-.proof-grid span {
-  min-height: 38px;
-  display: inline-grid;
-  place-items: center;
-  padding: 0 10px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: var(--radius);
-  font-size: 0.86rem;
-  font-weight: 800;
 }
 
 .section {
@@ -398,13 +387,121 @@ h3 {
   margin-top: 42px;
 }
 
+.pathways-section {
+  background: var(--surface-alt);
+}
+
+.pathways-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.trail-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 24px;
+}
+
+.trail-tabs a {
+  min-height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 14px;
+  color: var(--ink-soft);
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  font-size: 0.92rem;
+  font-weight: 800;
+  transition:
+    background 180ms ease,
+    border-color 180ms ease,
+    color 180ms ease,
+    transform 180ms ease;
+}
+
+.trail-tabs a:hover,
+.trail-tabs a.active {
+  color: #ffffff;
+  background: var(--teal);
+  border-color: var(--teal);
+  transform: translateY(-1px);
+}
+
+.trail-tabs-dark {
+  margin: 30px 0 0;
+}
+
+.trail-tabs-dark a {
+  color: rgba(255, 255, 255, 0.86);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.22);
+}
+
+.trail-tabs-dark a:hover,
+.trail-tabs-dark a.active {
+  color: var(--ink);
+  background: #ffffff;
+  border-color: #ffffff;
+}
+
 .value-card,
 .project-card,
-.stack-card {
+.stack-card,
+.pathway-card {
   border: 1px solid var(--line);
   border-radius: var(--radius);
   background: var(--surface);
   box-shadow: 0 18px 48px rgba(11, 18, 32, 0.06);
+}
+
+.pathway-card {
+  min-height: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 28px;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.pathway-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(20, 124, 127, 0.34);
+  box-shadow: 0 22px 58px rgba(11, 18, 32, 0.1);
+}
+
+.pathway-card svg {
+  width: 34px;
+  height: 34px;
+  margin-bottom: 24px;
+  color: var(--teal);
+}
+
+.pathway-card h3 {
+  margin-top: 18px;
+}
+
+.pathway-card p {
+  margin: 14px 0 0;
+  color: var(--muted);
+}
+
+.pathway-card strong {
+  margin-top: auto;
+  padding-top: 28px;
+  color: var(--teal);
 }
 
 .value-card {
@@ -568,6 +665,77 @@ h3 {
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: var(--radius);
   font-weight: 800;
+}
+
+.project-card:not(.feature-card) .project-actions a {
+  color: var(--ink);
+  border-color: rgba(20, 124, 127, 0.2);
+}
+
+.project-card:not(.feature-card) .project-actions a:hover {
+  color: var(--teal);
+  background: rgba(20, 124, 127, 0.08);
+}
+
+.inline-actions {
+  padding-top: 24px;
+}
+
+.page-hero {
+  position: relative;
+  min-height: 520px;
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  color: #ffffff;
+  background:
+    linear-gradient(90deg, rgba(6, 10, 18, 0.94) 0%, rgba(6, 10, 18, 0.78) 42%, rgba(6, 10, 18, 0.28) 100%),
+    url("assets/portfolio-hero.png") center / cover no-repeat;
+}
+
+.data-hero {
+  background-position: 58% center;
+}
+
+.ai-hero {
+  background-position: center;
+}
+
+.automation-hero {
+  background-position: 65% center;
+}
+
+.engineering-hero {
+  background-position: 54% center;
+}
+
+.page-hero-content {
+  max-width: 850px;
+  padding: clamp(72px, 9vw, 118px) 0 clamp(56px, 7vw, 82px);
+}
+
+.page-hero h1 {
+  max-width: 11ch;
+}
+
+.back-link {
+  width: fit-content;
+  min-height: 38px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 26px;
+  padding: 0 12px;
+  color: rgba(255, 255, 255, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: var(--radius);
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.back-link:hover {
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .stack-section,
@@ -737,7 +905,9 @@ h3 {
 
   .value-grid,
   .stack-grid,
-  .projects-grid {
+  .projects-grid,
+  .pathways-grid,
+  .catalog-grid {
     grid-template-columns: 1fr;
   }
 
@@ -801,25 +971,29 @@ h3 {
     background-position: 58% center;
   }
 
+  .page-hero {
+    min-height: auto;
+    background-position: 62% center;
+  }
+
   .hero-content {
     padding: 58px 0 38px;
+  }
+
+  .page-hero-content {
+    padding: 58px 0 46px;
   }
 
   h1 {
     max-width: 11ch;
   }
 
-  .hero-metrics,
-  .proof-grid {
+  .hero-metrics {
     grid-template-columns: 1fr 1fr;
   }
 
   .hero-metrics div {
     min-height: 96px;
-  }
-
-  .proof-grid span:last-child {
-    grid-column: 1 / -1;
   }
 
   .section {
@@ -833,25 +1007,31 @@ h3 {
   }
 
   .hero-actions,
+  .trail-tabs,
   .contact-actions,
   .project-actions {
     align-items: stretch;
   }
 
   .button,
+  .trail-tabs a,
   .project-actions a {
     width: 100%;
   }
 
-  .hero-metrics,
-  .proof-grid {
+  .hero-metrics {
     grid-template-columns: 1fr;
   }
 
   .project-card,
   .value-card,
-  .stack-card {
+  .stack-card,
+  .pathway-card {
     padding: 22px;
+  }
+
+  .pathway-card {
+    min-height: 300px;
   }
 
   .footer-inner {

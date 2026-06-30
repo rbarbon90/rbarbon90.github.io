@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta
+    name="description"
+    content="Projetos de Data Engineer de Rafael Barbon: pipelines, ETL, ELT, qualidade de dados, modelagem, PostgreSQL, APIs e automação."
+  />
+  <title>Data Engineer | Rafael Barbon</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Navegação principal">
+      <a class="brand" href="index.html#topo" aria-label="Rafael Barbon - início">
+        <span class="brand-mark">
+          <img src="assets/profile-photo.jpg" alt="" onerror="this.remove()" />
+          RB
+        </span>
+        <span>Rafael Barbon</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <i data-lucide="menu" aria-hidden="true"></i>
+        <span class="sr-only">Abrir menu</span>
+      </button>
+
+      <div class="nav-links" id="menu">
+        <a href="index.html#topo">Início</a>
+        <a href="index.html#sobre">Sobre</a>
+        <a href="index.html#projetos">Projetos</a>
+        <a href="index.html#stack">Stack</a>
+        <a class="nav-cta" href="index.html#contato">Contato</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="page-hero engineering-hero" id="topo" aria-labelledby="page-title">
+      <div class="container page-hero-content reveal">
+        <a class="back-link" href="index.html#projetos">
+          <i data-lucide="arrow-left" aria-hidden="true"></i>
+          Voltar para projetos
+        </a>
+        <p class="eyebrow">Projetos por área</p>
+        <h1 id="page-title">Data Engineer</h1>
+        <p class="hero-copy">
+          Projetos focados em pipelines, integração, qualidade, modelagem e preparação
+          de dados para analytics, automação e aplicações de IA.
+        </p>
+        <nav class="trail-tabs trail-tabs-dark" aria-label="Navegação entre áreas de projeto">
+          <a href="ai-engineering.html">AI Engineer</a>
+          <a href="data-science.html">Data Scientist</a>
+          <a class="active" href="data-engineering.html">Data Engineer</a>
+          <a href="python-automation.html">Python Developer</a>
+        </nav>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Foco dos projetos</p>
+          <h2>Dados confiáveis, disponíveis e prontos para uso</h2>
+        </div>
+        <div class="about-copy reveal">
+          <p>
+            Esta área reúne projetos em que o trabalho principal é transformar fontes
+            dispersas em pipelines consistentes, bases modeladas e rotinas observáveis.
+          </p>
+          <p>
+            O objetivo é mostrar atenção a qualidade, rastreabilidade, incrementalidade,
+            documentação e integração entre sistemas, analytics e IA.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects-section">
+      <div class="container section-title reveal">
+        <p class="eyebrow">Projetos de Data Engineer</p>
+        <h2>Projetos para demonstrar pipelines, qualidade e modelagem de dados</h2>
+      </div>
+
+      <div class="container catalog-grid">
+        <article class="project-card feature-card reveal">
+          <div class="project-topline">
+            <span class="project-label">Pipeline principal</span>
+            <span class="project-status">ETL / ELT</span>
+          </div>
+          <h3>API to Warehouse Pipeline</h3>
+          <p>
+            Pipeline para extrair dados de APIs externas, normalizar payloads, carregar
+            tabelas analíticas e manter histórico de execuções.
+          </p>
+          <div class="project-details">
+            <div>
+              <strong>Problema</strong>
+              <span>Dados operacionais chegam de fontes diferentes, com paginação, schemas instáveis e falhas ocasionais.</span>
+            </div>
+            <div>
+              <strong>Solução</strong>
+              <span>Extração incremental, validação de schema, retries, carga em PostgreSQL e logs estruturados.</span>
+            </div>
+            <div>
+              <strong>Impacto</strong>
+              <span>Base mais confiável para análises, dashboards e serviços que dependem de dados atualizados.</span>
+            </div>
+          </div>
+          <div class="tech-list">
+            <span>Python</span>
+            <span>SQLAlchemy</span>
+            <span>PostgreSQL</span>
+            <span>Docker</span>
+            <span>Pytest</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <span class="project-label">Qualidade</span>
+            <span class="project-status">Data checks</span>
+          </div>
+          <h3>Data Quality Monitor</h3>
+          <p>
+            Rotina para validar datasets críticos, detectar ausências, duplicidades,
+            quebras de schema e desvios em métricas operacionais.
+          </p>
+          <div class="project-details compact">
+            <div>
+              <strong>Diferencial</strong>
+              <span>Regras versionadas, severidade por falha e histórico de execução para auditoria.</span>
+            </div>
+            <div>
+              <strong>Entrega</strong>
+              <span>Relatórios de qualidade, alertas e checklist para correção de problemas recorrentes.</span>
+            </div>
+          </div>
+          <div class="tech-list">
+            <span>Great Expectations</span>
+            <span>Pandas</span>
+            <span>SQL</span>
+            <span>Slack API</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <span class="project-label">Modelagem</span>
+            <span class="project-status">Analytics</span>
+          </div>
+          <h3>Analytics Data Mart</h3>
+          <p>
+            Camada analítica com tabelas modeladas para métricas de negócio, análises
+            recorrentes e consumo por dashboards.
+          </p>
+          <div class="project-details compact">
+            <div>
+              <strong>Diferencial</strong>
+              <span>Separação entre ingestão, staging, regras de negócio e tabelas finais.</span>
+            </div>
+            <div>
+              <strong>Entrega</strong>
+              <span>Dicionário de dados, queries versionadas e exemplos de consumo para times de analytics.</span>
+            </div>
+          </div>
+          <div class="tech-list">
+            <span>PostgreSQL</span>
+            <span>dbt</span>
+            <span>SQL</span>
+            <span>Power BI</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <span class="project-label">Integração</span>
+            <span class="project-status">Reverse ETL</span>
+          </div>
+          <h3>Operational Data Sync</h3>
+          <p>
+            Sincronização de dados tratados para ferramentas operacionais, mantendo
+            rastreabilidade e controle de atualização.
+          </p>
+          <div class="project-details compact">
+            <div>
+              <strong>Diferencial</strong>
+              <span>Controle de mudanças, idempotência e logs para reduzir falhas em integrações externas.</span>
+            </div>
+            <div>
+              <strong>Entrega</strong>
+              <span>Jobs agendados, payloads validados e documentação para operação e suporte.</span>
+            </div>
+          </div>
+          <div class="tech-list">
+            <span>Python</span>
+            <span>REST APIs</span>
+            <span>PostgreSQL</span>
+            <span>Scheduler</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section stack-section">
+      <div class="container section-title reveal">
+        <p class="eyebrow">Stack aplicada</p>
+        <h2>Ferramentas usadas nestes projetos</h2>
+      </div>
+      <div class="container stack-grid">
+        <article class="stack-card reveal">
+          <h3>Pipelines</h3>
+          <ul>
+            <li>Python, SQLAlchemy, requests e jobs incrementais</li>
+            <li>Paginação, retry, idempotência e reprocessamento</li>
+            <li>Docker, variáveis de ambiente e logs estruturados</li>
+          </ul>
+        </article>
+        <article class="stack-card reveal">
+          <h3>Modelagem</h3>
+          <ul>
+            <li>PostgreSQL, SQL, staging e data marts</li>
+            <li>Regras de negócio versionadas e dicionário de dados</li>
+            <li>Camadas preparadas para analytics, BI e IA</li>
+          </ul>
+        </article>
+        <article class="stack-card reveal">
+          <h3>Qualidade</h3>
+          <ul>
+            <li>Validação de schema, completude e unicidade</li>
+            <li>Testes automatizados, alertas e auditoria</li>
+            <li>Monitoramento de falhas e documentação operacional</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Rafael Barbon</span>
+      <a href="#topo">Voltar ao topo</a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
