@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
     name="description"
-    content="Projetos de Data Scientist de Rafael Barbon: analytics, modelagem, SQL, Python, segmentação, previsão e storytelling com dados."
+    content="Projetos de Data Science de Rafael Barbon: analytics, modelagem, SQL, Python, segmentação, previsão e storytelling com dados."
   />
-  <title>Data Scientist | Rafael Barbon</title>
+  <title>Data Science | Rafael Barbon</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
     rel="stylesheet"
   />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=demo-modal-3" />
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
@@ -52,14 +52,14 @@
           Voltar para projetos
         </a>
         <p class="eyebrow">Projetos por área</p>
-        <h1 id="page-title">Data Scientist</h1>
+        <h1 id="page-title">Data Science</h1>
         <p class="hero-copy">
           Projetos voltados a análise, modelagem, exploração de dados e criação de
           insights acionáveis para decisões de negócio.
         </p>
         <nav class="trail-tabs trail-tabs-dark" aria-label="Navegação entre áreas de projeto">
           <a href="ai-engineering.html">AI Engineer</a>
-          <a class="active" href="data-science.html">Data Scientist</a>
+          <a class="active" href="data-science.html">Data Science</a>
           <a href="data-engineering.html">Data Engineer</a>
           <a href="python-automation.html">Python Developer</a>
         </nav>
@@ -88,125 +88,172 @@
 
     <section class="section projects-section">
       <div class="container section-title reveal">
-        <p class="eyebrow">Projetos de Data Scientist</p>
-        <h2>Projetos para demonstrar análise, modelagem e comunicação de resultados</h2>
+        <p class="eyebrow">Projetos de Data Science</p>
+        <h2>Soluções de Data Science pensadas para decisões de negócio</h2>
       </div>
 
       <div class="container catalog-grid">
-        <article class="project-card feature-card reveal">
+        <article class="project-card reveal">
           <div class="project-topline">
-            <span class="project-label">Analytics</span>
-            <span class="project-status">LLM + SQL</span>
+            <span class="project-label">Predictive Analytics</span>
+            <span class="project-status">Retenção</span>
           </div>
-          <h3>AI Data Analyst</h3>
+          <h3>Análise Preditiva de Churn</h3>
           <p>
-            Agente que recebe perguntas em linguagem natural, gera SQL validado,
-            consulta dados estruturados, cria gráficos e devolve insights executivos.
+            Solução para identificar clientes com maior risco de cancelamento e orientar
+            ações de retenção antes que a perda aconteça.
           </p>
           <div class="project-details">
             <div>
-              <strong>Problema</strong>
-              <span>Equipes dependem de consultas manuais e análises repetitivas para responder perguntas recorrentes.</span>
+              <strong>Problema de negócio</strong>
+              <span>Clientes em risco costumam ser percebidos tarde demais, quando a chance de retenção já é baixa.</span>
             </div>
             <div>
               <strong>Solução</strong>
-              <span>Fluxo com interpretação de intenção, geração segura de SQL, visualização e resumo analítico.</span>
+              <span>Um painel de Predictive Analytics que prioriza clientes críticos, explica os principais sinais de risco e sugere ações para CS, vendas ou marketing.</span>
             </div>
             <div>
-              <strong>Impacto</strong>
-              <span>Reduz tempo de exploração e ajuda a padronizar respostas baseadas em evidência.</span>
+              <strong>Impacto/Resultado</strong>
+              <span>Ajuda a proteger receita recorrente, direcionar esforços do time e reduzir cancelamentos evitáveis.</span>
             </div>
           </div>
           <div class="tech-list">
-            <span>Python</span>
-            <span>SQL</span>
-            <span>PostgreSQL</span>
-            <span>Pandas</span>
-            <span>Plotly</span>
+            <span>Churn Prediction</span>
+            <span>Customer Intelligence</span>
+            <span>Explainable AI</span>
+          </div>
+          <div class="project-actions">
+            <button class="project-demo-button" type="button" data-modal-open="churn-demo-modal">
+              <i data-lucide="play-circle" aria-hidden="true"></i>
+              Ver demo
+            </button>
+            <a href="https://github.com/rbarbon90/analise-preditiva-de-churn" target="_blank" rel="noreferrer">
+              <i data-lucide="github" aria-hidden="true"></i>
+              GitHub
+            </a>
           </div>
         </article>
 
         <article class="project-card reveal">
           <div class="project-topline">
-            <span class="project-label">Previsão</span>
-            <span class="project-status">Machine Learning</span>
+            <span class="project-label">Forecasting</span>
+            <span class="project-status">Planejamento</span>
           </div>
-          <h3>Customer Churn Prediction</h3>
+          <h3>Previsão de Vendas e Planejamento de Receita</h3>
           <p>
-            Modelo para identificar clientes com maior risco de cancelamento e apontar
-            variáveis que explicam o comportamento.
+            Solução para prever vendas, acompanhar tendência de receita e simular cenários
+            comerciais de forma executiva.
           </p>
-          <div class="project-details compact">
+          <div class="project-details">
             <div>
-              <strong>Diferencial</strong>
-              <span>Pipeline com limpeza, engenharia de atributos, validação e interpretação do modelo.</span>
+              <strong>Problema de negócio</strong>
+              <span>Gestores precisam planejar metas, caixa, estoque e capacidade, mas muitas decisões ainda dependem de planilhas históricas pouco confiáveis.</span>
             </div>
             <div>
-              <strong>Entrega</strong>
-              <span>Notebook analítico, métricas comparativas e recomendações para retenção.</span>
+              <strong>Solução</strong>
+              <span>Um dashboard de Forecasting com previsão de vendas, sazonalidade, tendência e cenários conservador, esperado e otimista.</span>
+            </div>
+            <div>
+              <strong>Impacto/Resultado</strong>
+              <span>Apoia planejamento comercial, melhora previsibilidade de receita e reduz decisões baseadas em percepção.</span>
             </div>
           </div>
           <div class="tech-list">
-            <span>Scikit-learn</span>
-            <span>Pandas</span>
-            <span>Seaborn</span>
-            <span>SHAP</span>
+            <span>Sales Forecast</span>
+            <span>Revenue Planning</span>
+            <span>Scenario Analysis</span>
+          </div>
+          <div class="project-actions">
+            <span class="project-action-placeholder" title="Demo em breve">
+              <i data-lucide="play-circle" aria-hidden="true"></i>
+              Demo em breve
+            </span>
+            <a href="https://github.com/rbarbon90" target="_blank" rel="noreferrer">
+              <i data-lucide="github" aria-hidden="true"></i>
+              GitHub
+            </a>
           </div>
         </article>
 
         <article class="project-card reveal">
           <div class="project-topline">
-            <span class="project-label">Segmentação</span>
-            <span class="project-status">Clustering</span>
+            <span class="project-label">AI-driven Segmentation</span>
+            <span class="project-status">Crescimento</span>
           </div>
-          <h3>Customer Segmentation</h3>
+          <h3>Segmentação de Clientes e Próxima Melhor Oferta</h3>
           <p>
-            Agrupamento de clientes por comportamento de compra para apoiar estratégias
-            de marketing, oferta e atendimento.
+            Solução para segmentar clientes por comportamento e recomendar a próxima melhor
+            oferta para cada grupo.
           </p>
-          <div class="project-details compact">
+          <div class="project-details">
             <div>
-              <strong>Diferencial</strong>
-              <span>Comparação de clusters, leitura de perfis e tradução dos grupos em ações de negócio.</span>
+              <strong>Problema de negócio</strong>
+              <span>Campanhas genéricas desperdiçam verba e tratam clientes com necessidades diferentes como se fossem iguais.</span>
             </div>
             <div>
-              <strong>Entrega</strong>
-              <span>Dashboard exploratório com indicadores por segmento e recomendações por público.</span>
+              <strong>Solução</strong>
+              <span>Uma solução de AI-driven Segmentation que identifica grupos de clientes, resume o perfil de cada segmento e sugere ofertas ou campanhas prioritárias.</span>
+            </div>
+            <div>
+              <strong>Impacto/Resultado</strong>
+              <span>Melhora personalização, aumenta conversão e ajuda marketing e vendas a priorizarem públicos de maior potencial.</span>
             </div>
           </div>
           <div class="tech-list">
-            <span>K-Means</span>
-            <span>Python</span>
-            <span>Plotly</span>
-            <span>Power BI</span>
+            <span>Customer Segmentation</span>
+            <span>Next Best Offer</span>
+            <span>Personalization</span>
+          </div>
+          <div class="project-actions">
+            <span class="project-action-placeholder" title="Demo em breve">
+              <i data-lucide="play-circle" aria-hidden="true"></i>
+              Demo em breve
+            </span>
+            <a href="https://github.com/rbarbon90" target="_blank" rel="noreferrer">
+              <i data-lucide="github" aria-hidden="true"></i>
+              GitHub
+            </a>
           </div>
         </article>
 
         <article class="project-card reveal">
           <div class="project-topline">
-            <span class="project-label">Forecast</span>
-            <span class="project-status">Séries temporais</span>
+            <span class="project-label">Generative AI</span>
+            <span class="project-status">Decisão executiva</span>
           </div>
-          <h3>Sales Forecast Dashboard</h3>
+          <h3>Copiloto Executivo de Insights</h3>
           <p>
-            Previsão de vendas com histórico temporal, sazonalidade, comparação entre
-            cenários e visualização para acompanhamento mensal.
+            Assistente para responder perguntas de negócio em linguagem natural, com
+            gráficos e resumo executivo.
           </p>
-          <div class="project-details compact">
+          <div class="project-details">
             <div>
-              <strong>Diferencial</strong>
-              <span>Combina análise exploratória, baseline simples e métricas de erro interpretáveis.</span>
+              <strong>Problema de negócio</strong>
+              <span>Líderes dependem de analistas para responder perguntas recorrentes sobre receita, clientes, regiões, produtos e performance.</span>
             </div>
             <div>
-              <strong>Entrega</strong>
-              <span>Relatório com tendência, sazonalidade, intervalo de confiança e próximos passos.</span>
+              <strong>Solução</strong>
+              <span>Um Executive Copilot com Generative AI que recebe perguntas em linguagem natural, consulta dados estruturados e devolve respostas com visualização e recomendação.</span>
+            </div>
+            <div>
+              <strong>Impacto/Resultado</strong>
+              <span>Acelera análises, reduz dependência de solicitações manuais e torna dados mais acessíveis para áreas de negócio.</span>
             </div>
           </div>
           <div class="tech-list">
-            <span>Statsmodels</span>
-            <span>Prophet</span>
-            <span>Pandas</span>
-            <span>Matplotlib</span>
+            <span>Executive Copilot</span>
+            <span>Generative AI</span>
+            <span>Natural Language Analytics</span>
+          </div>
+          <div class="project-actions">
+            <span class="project-action-placeholder" title="Demo em breve">
+              <i data-lucide="play-circle" aria-hidden="true"></i>
+              Demo em breve
+            </span>
+            <a href="https://github.com/rbarbon90" target="_blank" rel="noreferrer">
+              <i data-lucide="github" aria-hidden="true"></i>
+              GitHub
+            </a>
           </div>
         </article>
       </div>
@@ -246,6 +293,29 @@
     </section>
   </main>
 
+  <div class="project-modal" id="churn-demo-modal" role="dialog" aria-modal="true" aria-labelledby="churn-demo-title" hidden>
+    <div class="project-modal-backdrop" data-modal-close></div>
+    <div class="project-modal-panel" role="document" tabindex="-1">
+      <div class="project-modal-header">
+        <div>
+          <p class="eyebrow">Demo do projeto</p>
+          <h2 id="churn-demo-title">Análise Preditiva de Churn</h2>
+        </div>
+        <button class="project-modal-close" type="button" data-modal-close aria-label="Fechar modal">
+          <i data-lucide="x" aria-hidden="true"></i>
+        </button>
+      </div>
+      <video
+        data-modal-src="assets/projects/churn-demo.mp4"
+        controls
+        muted
+        playsinline
+        loop
+        aria-label="Demonstração do dashboard de análise preditiva de churn"
+      ></video>
+    </div>
+  </div>
+
   <footer class="site-footer">
     <div class="container footer-inner">
       <span>© <span id="year"></span> Rafael Barbon</span>
@@ -254,6 +324,6 @@
   </footer>
 
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
-  <script src="script.js"></script>
+  <script src="script.js?v=demo-modal-3"></script>
 </body>
 </html>

@@ -59,7 +59,7 @@
         </p>
         <nav class="trail-tabs trail-tabs-dark" aria-label="Navegação entre áreas de projeto">
           <a href="ai-engineering.html">AI Engineer</a>
-          <a href="data-science.html">Data Scientist</a>
+          <a href="data-science.html">Data Science</a>
           <a class="active" href="data-engineering.html">Data Engineer</a>
           <a href="python-automation.html">Python Developer</a>
         </nav>
@@ -88,124 +88,171 @@
     <section class="section projects-section">
       <div class="container section-title reveal">
         <p class="eyebrow">Projetos de Data Engineer</p>
-        <h2>Projetos para demonstrar pipelines, qualidade e modelagem de dados</h2>
+        <h2>Soluções para transformar dados dispersos em operação confiável</h2>
       </div>
 
       <div class="container catalog-grid">
-        <article class="project-card feature-card reveal">
+        <article class="project-card reveal">
           <div class="project-topline">
-            <span class="project-label">Pipeline principal</span>
-            <span class="project-status">ETL / ELT</span>
+            <span class="project-label">Modern Data Stack</span>
+            <span class="project-status">Integração</span>
           </div>
-          <h3>API to Warehouse Pipeline</h3>
+          <h3>Central de Integração de Dados do Negócio</h3>
           <p>
-            Pipeline para extrair dados de APIs externas, normalizar payloads, carregar
-            tabelas analíticas e manter histórico de execuções.
+            Camada de integração para consolidar dados de vendas, clientes, produto
+            e operação em uma base confiável para análise.
           </p>
           <div class="project-details">
             <div>
-              <strong>Problema</strong>
-              <span>Dados operacionais chegam de fontes diferentes, com paginação, schemas instáveis e falhas ocasionais.</span>
+              <strong>Problema de negócio</strong>
+              <span>Áreas diferentes tomam decisões com números divergentes porque cada sistema guarda uma parte da verdade.</span>
             </div>
             <div>
               <strong>Solução</strong>
-              <span>Extração incremental, validação de schema, retries, carga em PostgreSQL e logs estruturados.</span>
+              <span>Um hub de dados com pipelines incrementais, padronização de cadastros, histórico de cargas e integração entre fontes críticas.</span>
             </div>
             <div>
-              <strong>Impacto</strong>
-              <span>Base mais confiável para análises, dashboards e serviços que dependem de dados atualizados.</span>
+              <strong>Impacto/Resultado</strong>
+              <span>Cria uma visão única do negócio, reduz conciliação manual e dá base para BI, automação e aplicações de IA.</span>
             </div>
           </div>
           <div class="tech-list">
-            <span>Python</span>
-            <span>SQLAlchemy</span>
-            <span>PostgreSQL</span>
-            <span>Docker</span>
-            <span>Pytest</span>
+            <span>Modern Data Stack</span>
+            <span>Data Integration</span>
+            <span>Single Source of Truth</span>
+          </div>
+          <div class="project-actions">
+            <span class="project-action-placeholder" title="Demo em breve">
+              <i data-lucide="play-circle" aria-hidden="true"></i>
+              Demo em breve
+            </span>
+            <a href="https://github.com/rbarbon90" target="_blank" rel="noreferrer">
+              <i data-lucide="github" aria-hidden="true"></i>
+              GitHub
+            </a>
           </div>
         </article>
 
         <article class="project-card reveal">
           <div class="project-topline">
-            <span class="project-label">Qualidade</span>
-            <span class="project-status">Data checks</span>
+            <span class="project-label">Data Quality</span>
+            <span class="project-status">Confiança</span>
           </div>
-          <h3>Data Quality Monitor</h3>
+          <h3>Central de Qualidade dos Dados</h3>
           <p>
-            Rotina para validar datasets críticos, detectar ausências, duplicidades,
-            quebras de schema e desvios em métricas operacionais.
+            Monitor para acompanhar saúde dos dados, detectar falhas e avisar quando
+            indicadores críticos deixam de ser confiáveis.
           </p>
-          <div class="project-details compact">
+          <div class="project-details">
             <div>
-              <strong>Diferencial</strong>
-              <span>Regras versionadas, severidade por falha e histórico de execução para auditoria.</span>
+              <strong>Problema de negócio</strong>
+              <span>Dashboards e relatórios perdem credibilidade quando dados chegam incompletos, duplicados ou fora do padrão esperado.</span>
             </div>
             <div>
-              <strong>Entrega</strong>
-              <span>Relatórios de qualidade, alertas e checklist para correção de problemas recorrentes.</span>
+              <strong>Solução</strong>
+              <span>Um painel de Data Quality com regras de completude, duplicidade, atualização, variação de métricas e alertas por severidade.</span>
+            </div>
+            <div>
+              <strong>Impacto/Resultado</strong>
+              <span>Aumenta confiança nos indicadores, antecipa problemas e reduz tempo gasto procurando origem de erros.</span>
             </div>
           </div>
           <div class="tech-list">
-            <span>Great Expectations</span>
-            <span>Pandas</span>
-            <span>SQL</span>
-            <span>Slack API</span>
+            <span>Data Observability</span>
+            <span>Data Quality</span>
+            <span>Alerting</span>
+          </div>
+          <div class="project-actions">
+            <span class="project-action-placeholder" title="Demo em breve">
+              <i data-lucide="play-circle" aria-hidden="true"></i>
+              Demo em breve
+            </span>
+            <a href="https://github.com/rbarbon90" target="_blank" rel="noreferrer">
+              <i data-lucide="github" aria-hidden="true"></i>
+              GitHub
+            </a>
           </div>
         </article>
 
         <article class="project-card reveal">
           <div class="project-topline">
-            <span class="project-label">Modelagem</span>
-            <span class="project-status">Analytics</span>
+            <span class="project-label">Analytics Engineering</span>
+            <span class="project-status">Métricas</span>
           </div>
-          <h3>Analytics Data Mart</h3>
+          <h3>Camada de Métricas Executivas</h3>
           <p>
-            Camada analítica com tabelas modeladas para métricas de negócio, análises
-            recorrentes e consumo por dashboards.
+            Camada analítica para organizar métricas executivas e garantir que áreas
+            diferentes leiam os mesmos indicadores.
           </p>
-          <div class="project-details compact">
+          <div class="project-details">
             <div>
-              <strong>Diferencial</strong>
-              <span>Separação entre ingestão, staging, regras de negócio e tabelas finais.</span>
+              <strong>Problema de negócio</strong>
+              <span>Métricas como receita, conversão, churn e ticket médio mudam conforme a planilha ou o relatório usado.</span>
             </div>
             <div>
-              <strong>Entrega</strong>
-              <span>Dicionário de dados, queries versionadas e exemplos de consumo para times de analytics.</span>
+              <strong>Solução</strong>
+              <span>Um Data Mart com regras de negócio versionadas, dicionário de métricas e tabelas prontas para dashboards e análises recorrentes.</span>
+            </div>
+            <div>
+              <strong>Impacto/Resultado</strong>
+              <span>Reduz discussões sobre definição de números e melhora velocidade de análise para liderança e áreas de negócio.</span>
             </div>
           </div>
           <div class="tech-list">
-            <span>PostgreSQL</span>
-            <span>dbt</span>
-            <span>SQL</span>
-            <span>Power BI</span>
+            <span>Analytics Engineering</span>
+            <span>Metric Layer</span>
+            <span>Data Mart</span>
+          </div>
+          <div class="project-actions">
+            <span class="project-action-placeholder" title="Demo em breve">
+              <i data-lucide="play-circle" aria-hidden="true"></i>
+              Demo em breve
+            </span>
+            <a href="https://github.com/rbarbon90" target="_blank" rel="noreferrer">
+              <i data-lucide="github" aria-hidden="true"></i>
+              GitHub
+            </a>
           </div>
         </article>
 
         <article class="project-card reveal">
           <div class="project-topline">
-            <span class="project-label">Integração</span>
-            <span class="project-status">Reverse ETL</span>
+            <span class="project-label">Reverse ETL</span>
+            <span class="project-status">Operação</span>
           </div>
-          <h3>Operational Data Sync</h3>
+          <h3>Ativação da Visão 360 do Cliente</h3>
           <p>
-            Sincronização de dados tratados para ferramentas operacionais, mantendo
-            rastreabilidade e controle de atualização.
+            Pipeline para levar dados tratados de clientes para ferramentas comerciais,
+            atendimento e marketing de forma controlada.
           </p>
-          <div class="project-details compact">
+          <div class="project-details">
             <div>
-              <strong>Diferencial</strong>
-              <span>Controle de mudanças, idempotência e logs para reduzir falhas em integrações externas.</span>
+              <strong>Problema de negócio</strong>
+              <span>Informações úteis ficam presas em bases analíticas e não chegam aos times que falam com o cliente no dia a dia.</span>
             </div>
             <div>
-              <strong>Entrega</strong>
-              <span>Jobs agendados, payloads validados e documentação para operação e suporte.</span>
+              <strong>Solução</strong>
+              <span>Uma rotina de Reverse ETL que atualiza atributos, segmentos e sinais de oportunidade em ferramentas operacionais.</span>
+            </div>
+            <div>
+              <strong>Impacto/Resultado</strong>
+              <span>Ajuda vendas, marketing e CS a agir com dados atualizados, reduzindo tarefas manuais e melhorando personalização.</span>
             </div>
           </div>
           <div class="tech-list">
-            <span>Python</span>
-            <span>REST APIs</span>
-            <span>PostgreSQL</span>
-            <span>Scheduler</span>
+            <span>Customer 360</span>
+            <span>Reverse ETL</span>
+            <span>Operational Analytics</span>
+          </div>
+          <div class="project-actions">
+            <span class="project-action-placeholder" title="Demo em breve">
+              <i data-lucide="play-circle" aria-hidden="true"></i>
+              Demo em breve
+            </span>
+            <a href="https://github.com/rbarbon90" target="_blank" rel="noreferrer">
+              <i data-lucide="github" aria-hidden="true"></i>
+              GitHub
+            </a>
           </div>
         </article>
       </div>

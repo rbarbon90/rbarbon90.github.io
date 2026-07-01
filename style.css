@@ -541,16 +541,6 @@ h3 {
   padding: 28px;
 }
 
-.feature-card {
-  grid-row: span 2;
-  color: #ffffff;
-  background:
-    linear-gradient(145deg, rgba(11, 18, 32, 0.96), rgba(20, 124, 127, 0.9)),
-    var(--ink);
-  border-color: rgba(20, 124, 127, 0.52);
-  box-shadow: var(--shadow);
-}
-
 .project-topline {
   display: flex;
   flex-wrap: wrap;
@@ -576,7 +566,7 @@ h3 {
   background: var(--coral);
 }
 
-.project-card:not(.feature-card) .project-label {
+.project-card .project-label {
   background: rgba(214, 95, 69, 0.12);
   color: var(--coral);
 }
@@ -586,18 +576,8 @@ h3 {
   background: rgba(20, 124, 127, 0.1);
 }
 
-.feature-card .project-status {
-  color: #77d7d3;
-  background: rgba(255, 255, 255, 0.1);
-}
-
 .project-card p {
   margin: 16px 0 0;
-}
-
-.feature-card p,
-.feature-card .project-details span {
-  color: rgba(255, 255, 255, 0.78);
 }
 
 .project-details {
@@ -613,10 +593,6 @@ h3 {
 .project-details div {
   padding: 14px 0 0;
   border-top: 1px solid rgba(100, 112, 132, 0.22);
-}
-
-.feature-card .project-details div {
-  border-color: rgba(255, 255, 255, 0.18);
 }
 
 .project-details strong,
@@ -645,17 +621,14 @@ h3 {
   background: rgba(47, 125, 92, 0.1);
 }
 
-.feature-card .tech-list span {
-  color: #ffffff;
-  background: rgba(255, 255, 255, 0.12);
-}
-
 .project-actions {
   margin-top: auto;
   padding-top: 30px;
 }
 
-.project-actions a {
+.project-actions a,
+.project-demo-button,
+.project-action-placeholder {
   min-height: 42px;
   display: inline-flex;
   align-items: center;
@@ -667,14 +640,115 @@ h3 {
   font-weight: 800;
 }
 
-.project-card:not(.feature-card) .project-actions a {
+.project-demo-button {
+  cursor: pointer;
+  font: inherit;
+  background: transparent;
+}
+
+.project-action-placeholder {
+  cursor: default;
+  opacity: 0.66;
+}
+
+.project-card .project-actions a,
+.project-card .project-demo-button {
   color: var(--ink);
   border-color: rgba(20, 124, 127, 0.2);
 }
 
-.project-card:not(.feature-card) .project-actions a:hover {
+.project-card .project-action-placeholder {
+  color: var(--muted);
+  border-color: rgba(15, 23, 42, 0.12);
+  background: rgba(15, 23, 42, 0.03);
+}
+
+.project-card .project-actions a:hover,
+.project-card .project-demo-button:hover {
   color: var(--teal);
   background: rgba(20, 124, 127, 0.08);
+}
+
+.project-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  display: grid;
+  place-items: center;
+  padding: clamp(12px, 2vw, 24px);
+}
+
+.project-modal[hidden] {
+  display: none;
+}
+
+.project-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(11, 18, 32, 0.72);
+  backdrop-filter: blur(8px);
+}
+
+.project-modal-panel {
+  position: relative;
+  width: min(96vw, 1440px);
+  max-height: 92vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid rgba(216, 212, 203, 0.86);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.project-modal-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 20px 22px;
+  border-bottom: 1px solid var(--line);
+}
+
+.project-modal-header .eyebrow {
+  margin-bottom: 4px;
+}
+
+.project-modal-header h2 {
+  margin: 0;
+  font-size: clamp(1.25rem, 2.2vw, 1.9rem);
+}
+
+.project-modal-close {
+  width: 42px;
+  height: 42px;
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 auto;
+  cursor: pointer;
+  color: var(--ink);
+  background: #ffffff;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.project-modal-close:hover {
+  color: var(--teal);
+  background: rgba(20, 124, 127, 0.08);
+}
+
+.project-modal-panel img,
+.project-modal-panel video {
+  width: 100%;
+  height: auto;
+  max-height: calc(92vh - 88px);
+  object-fit: contain;
+  background: #f4f6f8;
+}
+
+body.modal-open {
+  overflow: hidden;
 }
 
 .inline-actions {
@@ -911,13 +985,10 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .feature-card {
-    grid-row: auto;
-  }
-
   .contact-actions {
     justify-content: flex-start;
   }
+
 }
 
 @media (max-width: 760px) {
@@ -1015,7 +1086,9 @@ h3 {
 
   .button,
   .trail-tabs a,
-  .project-actions a {
+  .project-actions a,
+  .project-demo-button,
+  .project-action-placeholder {
     width: 100%;
   }
 

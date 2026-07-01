@@ -59,7 +59,7 @@
         </p>
         <nav class="trail-tabs trail-tabs-dark" aria-label="Navegação entre áreas de projeto">
           <a href="ai-engineering.html">AI Engineer</a>
-          <a href="data-science.html">Data Scientist</a>
+          <a href="data-science.html">Data Science</a>
           <a href="data-engineering.html">Data Engineer</a>
           <a class="active" href="python-automation.html">Python Developer</a>
         </nav>
@@ -89,124 +89,171 @@
     <section class="section projects-section">
       <div class="container section-title reveal">
         <p class="eyebrow">Projetos de Python Developer</p>
-        <h2>Projetos para mostrar automação, APIs e serviços Python em operação</h2>
+        <h2>Soluções Python para reduzir trabalho manual e dar escala à operação</h2>
       </div>
 
       <div class="container catalog-grid">
-        <article class="project-card feature-card reveal">
+        <article class="project-card reveal">
           <div class="project-topline">
-            <span class="project-label">Backend</span>
-            <span class="project-status">FastAPI</span>
+            <span class="project-label">Workflow Automation</span>
+            <span class="project-status">Operação</span>
           </div>
-          <h3>Data Operations API</h3>
+          <h3>Central de Automação Operacional</h3>
           <p>
-            API para centralizar consultas, validações e rotinas de dados usadas por
-            dashboards, automações e análises recorrentes.
+            Central para automatizar rotinas operacionais, acompanhar execuções e
+            reduzir tarefas repetitivas entre sistemas.
           </p>
           <div class="project-details">
             <div>
-              <strong>Problema</strong>
-              <span>Regras de negócio espalhadas em planilhas, notebooks e scripts sem padrão.</span>
+              <strong>Problema de negócio</strong>
+              <span>Times gastam horas com conferências, atualizações e envios manuais que poderiam seguir regras claras.</span>
             </div>
             <div>
               <strong>Solução</strong>
-              <span>Serviço FastAPI com schemas, endpoints versionados, logs e documentação automática.</span>
+              <span>Uma plataforma de Workflow Automation com jobs agendados, validações, logs de execução e painel simples de acompanhamento.</span>
             </div>
             <div>
-              <strong>Impacto</strong>
-              <span>Reduz duplicidade, melhora rastreabilidade e facilita integração com novos consumidores.</span>
+              <strong>Impacto/Resultado</strong>
+              <span>Reduz esforço manual, diminui erros operacionais e dá visibilidade sobre processos que antes ficavam invisíveis.</span>
             </div>
           </div>
           <div class="tech-list">
-            <span>Python</span>
-            <span>FastAPI</span>
-            <span>Pydantic</span>
-            <span>PostgreSQL</span>
-            <span>Docker</span>
+            <span>Workflow Automation</span>
+            <span>Operational Excellence</span>
+            <span>Task Scheduling</span>
+          </div>
+          <div class="project-actions">
+            <span class="project-action-placeholder" title="Demo em breve">
+              <i data-lucide="play-circle" aria-hidden="true"></i>
+              Demo em breve
+            </span>
+            <a href="https://github.com/rbarbon90" target="_blank" rel="noreferrer">
+              <i data-lucide="github" aria-hidden="true"></i>
+              GitHub
+            </a>
           </div>
         </article>
 
         <article class="project-card reveal">
           <div class="project-topline">
-            <span class="project-label">ETL</span>
-            <span class="project-status">Integrações</span>
+            <span class="project-label">Document Automation</span>
+            <span class="project-status">Backoffice</span>
           </div>
-          <h3>API to Warehouse Pipeline</h3>
+          <h3>Automação de Processamento de Documentos</h3>
           <p>
-            Pipeline para extrair dados de APIs externas, normalizar payloads, gravar em
-            banco relacional e registrar falhas para reprocessamento.
+            Automação para receber documentos, extrair informações relevantes, validar
+            regras e organizar pendências para revisão.
           </p>
-          <div class="project-details compact">
+          <div class="project-details">
             <div>
-              <strong>Diferencial</strong>
-              <span>Paginação, retry, controle incremental e validação de schema antes da carga.</span>
+              <strong>Problema de negócio</strong>
+              <span>Processos baseados em PDFs, anexos e planilhas geram retrabalho, atrasos e alta dependência de conferência humana.</span>
             </div>
             <div>
-              <strong>Entrega</strong>
-              <span>Jobs parametrizados, logs estruturados e documentação de variáveis de ambiente.</span>
+              <strong>Solução</strong>
+              <span>Um fluxo de Document Automation que lê arquivos, extrai campos, aplica regras de validação e separa casos aprovados e pendentes.</span>
+            </div>
+            <div>
+              <strong>Impacto/Resultado</strong>
+              <span>Acelera backoffice, reduz erros de digitação e cria trilha de auditoria para documentos processados.</span>
             </div>
           </div>
           <div class="tech-list">
-            <span>Requests</span>
-            <span>SQLAlchemy</span>
-            <span>PostgreSQL</span>
-            <span>Docker</span>
+            <span>Document Automation</span>
+            <span>OCR-ready</span>
+            <span>Validation Rules</span>
+          </div>
+          <div class="project-actions">
+            <span class="project-action-placeholder" title="Demo em breve">
+              <i data-lucide="play-circle" aria-hidden="true"></i>
+              Demo em breve
+            </span>
+            <a href="https://github.com/rbarbon90" target="_blank" rel="noreferrer">
+              <i data-lucide="github" aria-hidden="true"></i>
+              GitHub
+            </a>
           </div>
         </article>
 
         <article class="project-card reveal">
           <div class="project-topline">
-            <span class="project-label">Qualidade</span>
-            <span class="project-status">Monitoramento</span>
+            <span class="project-label">Internal API</span>
+            <span class="project-status">Self-service</span>
           </div>
-          <h3>Data Quality Monitor</h3>
+          <h3>API Interna de Autoatendimento Operacional</h3>
           <p>
-            Rotina para validar datasets críticos, detectar valores ausentes, duplicidade,
-            quebras de schema e desvios em métricas principais.
+            API interna para expor regras, consultas e rotinas operacionais de forma
+            segura para outros sistemas e usuários autorizados.
           </p>
-          <div class="project-details compact">
+          <div class="project-details">
             <div>
-              <strong>Diferencial</strong>
-              <span>Regras versionadas, alertas e histórico de execuções para auditoria.</span>
+              <strong>Problema de negócio</strong>
+              <span>Solicitações simples viram fila técnica porque regras e consultas ficam presas em scripts ou planilhas de poucas pessoas.</span>
             </div>
             <div>
-              <strong>Entrega</strong>
-              <span>Relatórios de qualidade com severidade, causa provável e sugestão de ação.</span>
+              <strong>Solução</strong>
+              <span>Uma Internal API com endpoints documentados, autenticação, validação de entradas e respostas padronizadas para consumo self-service.</span>
+            </div>
+            <div>
+              <strong>Impacto/Resultado</strong>
+              <span>Diminui dependência de pedidos manuais, acelera integrações e melhora governança sobre regras operacionais.</span>
             </div>
           </div>
           <div class="tech-list">
-            <span>Great Expectations</span>
-            <span>Pandas</span>
-            <span>Pytest</span>
-            <span>Slack API</span>
+            <span>Internal API</span>
+            <span>Self-service</span>
+            <span>Process Integration</span>
+          </div>
+          <div class="project-actions">
+            <span class="project-action-placeholder" title="Demo em breve">
+              <i data-lucide="play-circle" aria-hidden="true"></i>
+              Demo em breve
+            </span>
+            <a href="https://github.com/rbarbon90" target="_blank" rel="noreferrer">
+              <i data-lucide="github" aria-hidden="true"></i>
+              GitHub
+            </a>
           </div>
         </article>
 
         <article class="project-card reveal">
           <div class="project-topline">
-            <span class="project-label">Automação</span>
-            <span class="project-status">Relatórios</span>
+            <span class="project-label">Reporting Automation</span>
+            <span class="project-status">Gestão</span>
           </div>
-          <h3>Automated Reporting Workflow</h3>
+          <h3>Automação de Relatórios Executivos</h3>
           <p>
-            Fluxo para consolidar dados, gerar relatórios recorrentes e distribuir saídas
-            para stakeholders com registro de execução.
+            Fluxo para consolidar dados, gerar relatórios recorrentes e distribuir
+            resumos executivos para stakeholders.
           </p>
-          <div class="project-details compact">
+          <div class="project-details">
             <div>
-              <strong>Diferencial</strong>
-              <span>Separação entre coleta, transformação, renderização e envio para facilitar manutenção.</span>
+              <strong>Problema de negócio</strong>
+              <span>Relatórios recorrentes consomem tempo, dependem de cópia manual e chegam tarde para apoiar decisões.</span>
             </div>
             <div>
-              <strong>Entrega</strong>
-              <span>Relatórios em HTML/PDF, logs de envio e configuração por ambiente.</span>
+              <strong>Solução</strong>
+              <span>Uma automação que consolida fontes, gera relatórios em formato padronizado, envia para públicos definidos e registra execução.</span>
+            </div>
+            <div>
+              <strong>Impacto/Resultado</strong>
+              <span>Garante recorrência, reduz risco de erro manual e libera analistas para interpretar resultados em vez de montar arquivos.</span>
             </div>
           </div>
           <div class="tech-list">
-            <span>Python</span>
-            <span>Jinja2</span>
-            <span>Pandas</span>
-            <span>SMTP</span>
+            <span>Reporting Automation</span>
+            <span>Executive Summary</span>
+            <span>Operational Analytics</span>
+          </div>
+          <div class="project-actions">
+            <span class="project-action-placeholder" title="Demo em breve">
+              <i data-lucide="play-circle" aria-hidden="true"></i>
+              Demo em breve
+            </span>
+            <a href="https://github.com/rbarbon90" target="_blank" rel="noreferrer">
+              <i data-lucide="github" aria-hidden="true"></i>
+              GitHub
+            </a>
           </div>
         </article>
       </div>

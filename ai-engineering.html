@@ -59,7 +59,7 @@
         </p>
         <nav class="trail-tabs trail-tabs-dark" aria-label="Navegação entre áreas de projeto">
           <a class="active" href="ai-engineering.html">AI Engineer</a>
-          <a href="data-science.html">Data Scientist</a>
+          <a href="data-science.html">Data Science</a>
           <a href="data-engineering.html">Data Engineer</a>
           <a href="python-automation.html">Python Developer</a>
         </nav>
@@ -89,68 +89,130 @@
     <section class="section projects-section">
       <div class="container section-title reveal">
         <p class="eyebrow">Projetos de AI Engineer</p>
-        <h2>Projetos para demonstrar arquitetura, qualidade e produto com LLMs</h2>
+        <h2>Soluções de IA aplicadas a atendimento, conhecimento e decisão</h2>
       </div>
 
       <div class="container catalog-grid">
-        <article class="project-card feature-card reveal">
+        <article class="project-card reveal">
           <div class="project-topline">
-            <span class="project-label">Projeto principal</span>
-            <span class="project-status">RAG</span>
+            <span class="project-label">Enterprise RAG</span>
+            <span class="project-status">Conhecimento</span>
           </div>
-          <h3>Enterprise RAG Platform</h3>
+          <h3>Assistente de Conhecimento Corporativo</h3>
           <p>
-            Plataforma para consulta de documentos empresariais com ingestão, chunking,
-            embeddings, banco vetorial, reranking e respostas rastreáveis com fontes.
+            Assistente para encontrar respostas em documentos internos, políticas,
+            manuais e bases de conhecimento com fontes rastreáveis.
           </p>
           <div class="project-details">
             <div>
-              <strong>Problema</strong>
-              <span>Conhecimento interno disperso em PDFs, manuais, políticas e bases pouco pesquisáveis.</span>
+              <strong>Problema de negócio</strong>
+              <span>Times perdem tempo procurando informações em documentos espalhados e nem sempre encontram a versão correta.</span>
             </div>
             <div>
               <strong>Solução</strong>
-              <span>Pipeline RAG com FastAPI, Qdrant, embeddings, reranking, citações e logs de avaliação.</span>
+              <span>Uma solução de Enterprise RAG com Generative AI que responde perguntas em linguagem natural, mostra as fontes usadas e registra dúvidas sem resposta.</span>
             </div>
             <div>
-              <strong>Impacto</strong>
-              <span>Busca mais rápida, respostas auditáveis e caminho claro para evolução com métricas.</span>
+              <strong>Impacto/Resultado</strong>
+              <span>Reduz tempo de busca, melhora padronização das respostas e acelera onboarding, suporte e tomada de decisão.</span>
             </div>
           </div>
           <div class="tech-list">
-            <span>Python</span>
-            <span>FastAPI</span>
-            <span>Qdrant</span>
-            <span>OpenAI</span>
-            <span>Docker</span>
+            <span>RAG</span>
+            <span>Knowledge Base</span>
+            <span>Generative AI</span>
+          </div>
+          <div class="project-actions">
+            <span class="project-action-placeholder" title="Demo em breve">
+              <i data-lucide="play-circle" aria-hidden="true"></i>
+              Demo em breve
+            </span>
+            <a href="https://github.com/rbarbon90" target="_blank" rel="noreferrer">
+              <i data-lucide="github" aria-hidden="true"></i>
+              GitHub
+            </a>
           </div>
         </article>
 
         <article class="project-card reveal">
           <div class="project-topline">
-            <span class="project-label">Agentes</span>
-            <span class="project-status">LLM + Tools</span>
+            <span class="project-label">AI Copilot</span>
+            <span class="project-status">Atendimento</span>
           </div>
-          <h3>AI Data Analyst</h3>
+          <h3>Copiloto de IA para Atendimento</h3>
           <p>
-            Agente analítico que interpreta perguntas, chama ferramentas, valida SQL e
-            devolve gráficos com explicação executiva.
+            Copiloto para apoiar equipes de atendimento com respostas sugeridas,
+            resumo de contexto e encaminhamento de casos complexos.
           </p>
-          <div class="project-details compact">
+          <div class="project-details">
             <div>
-              <strong>Diferencial</strong>
-              <span>Separação entre raciocínio, execução de consulta, validação e resposta final.</span>
+              <strong>Problema de negócio</strong>
+              <span>Atendimentos repetitivos consomem tempo do time e respostas inconsistentes prejudicam a experiência do cliente.</span>
             </div>
             <div>
-              <strong>Entrega</strong>
-              <span>API com logs de decisão, exemplos de uso e limites claros para consultas seguras.</span>
+              <strong>Solução</strong>
+              <span>Um AI Copilot que identifica a intenção do cliente, sugere respostas, resume histórico e indica quando escalar para um especialista.</span>
+            </div>
+            <div>
+              <strong>Impacto/Resultado</strong>
+              <span>Reduz tempo médio de atendimento, melhora consistência e libera a equipe para casos de maior valor.</span>
             </div>
           </div>
           <div class="tech-list">
-            <span>LangGraph</span>
-            <span>PostgreSQL</span>
-            <span>Pydantic</span>
-            <span>Plotly</span>
+            <span>AI Agent</span>
+            <span>Intent Classification</span>
+            <span>Human in the Loop</span>
+          </div>
+          <div class="project-actions">
+            <span class="project-action-placeholder" title="Demo em breve">
+              <i data-lucide="play-circle" aria-hidden="true"></i>
+              Demo em breve
+            </span>
+            <a href="https://github.com/rbarbon90" target="_blank" rel="noreferrer">
+              <i data-lucide="github" aria-hidden="true"></i>
+              GitHub
+            </a>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <span class="project-label">Document AI</span>
+            <span class="project-status">Compliance</span>
+          </div>
+          <h3>Revisão Inteligente de Contratos e Documentos</h3>
+          <p>
+            Solução para revisar contratos, propostas e documentos operacionais,
+            destacando riscos, cláusulas sensíveis e pontos de atenção.
+          </p>
+          <div class="project-details">
+            <div>
+              <strong>Problema de negócio</strong>
+              <span>Revisões manuais são lentas, dependem de especialistas e podem deixar riscos importantes passarem despercebidos.</span>
+            </div>
+            <div>
+              <strong>Solução</strong>
+              <span>Um fluxo de Document AI que extrai pontos relevantes, compara padrões esperados e gera um resumo executivo para revisão humana.</span>
+            </div>
+            <div>
+              <strong>Impacto/Resultado</strong>
+              <span>Acelera triagem, reduz retrabalho e ajuda áreas jurídica, compras e operações a priorizarem documentos críticos.</span>
+            </div>
+          </div>
+          <div class="tech-list">
+            <span>Document AI</span>
+            <span>Risk Detection</span>
+            <span>Executive Summary</span>
+          </div>
+          <div class="project-actions">
+            <span class="project-action-placeholder" title="Demo em breve">
+              <i data-lucide="play-circle" aria-hidden="true"></i>
+              Demo em breve
+            </span>
+            <a href="https://github.com/rbarbon90" target="_blank" rel="noreferrer">
+              <i data-lucide="github" aria-hidden="true"></i>
+              GitHub
+            </a>
           </div>
         </article>
 
@@ -159,54 +221,39 @@
             <span class="project-label">LLMOps</span>
             <span class="project-status">Qualidade</span>
           </div>
-          <h3>LLM Evaluation Framework</h3>
+          <h3>Central de Qualidade e Avaliação de IA</h3>
           <p>
-            Framework para comparar prompts, modelos e versões de aplicação por precisão,
-            relevância, fidelidade ao contexto, segurança e custo.
+            Central para medir qualidade, custo, segurança e evolução de aplicações
+            com IA generativa antes de colocá-las em uso real.
           </p>
-          <div class="project-details compact">
+          <div class="project-details">
             <div>
-              <strong>Diferencial</strong>
-              <span>Scorecards versionados para evitar regressão de qualidade entre mudanças.</span>
+              <strong>Problema de negócio</strong>
+              <span>Protótipos com IA podem parecer bons em demonstrações, mas falhar em escala por respostas fracas, caras ou inconsistentes.</span>
             </div>
             <div>
-              <strong>Entrega</strong>
-              <span>Dataset de avaliação, testes automatizados e relatório de melhoria contínua.</span>
+              <strong>Solução</strong>
+              <span>Um hub de LLMOps com scorecards, testes de regressão, avaliação de respostas e acompanhamento de custo e latência.</span>
+            </div>
+            <div>
+              <strong>Impacto/Resultado</strong>
+              <span>Aumenta confiança no produto, reduz riscos de lançamento e cria critérios claros para evolução contínua.</span>
             </div>
           </div>
           <div class="tech-list">
-            <span>RAGAS</span>
-            <span>LangSmith</span>
-            <span>Pytest</span>
-            <span>MLflow</span>
+            <span>LLMOps</span>
+            <span>Evals</span>
+            <span>Quality Scorecards</span>
           </div>
-        </article>
-
-        <article class="project-card reveal">
-          <div class="project-topline">
-            <span class="project-label">Assistente</span>
-            <span class="project-status">Suporte interno</span>
-          </div>
-          <h3>Internal Support Agent</h3>
-          <p>
-            Assistente para atendimento interno com base de conhecimento, classificação
-            de intenção, respostas padronizadas e escalonamento para especialistas.
-          </p>
-          <div class="project-details compact">
-            <div>
-              <strong>Diferencial</strong>
-              <span>Combina RAG, roteamento de intenção e limites de resposta para reduzir alucinação.</span>
-            </div>
-            <div>
-              <strong>Entrega</strong>
-              <span>Protótipo com fluxo conversacional, logs e painel de perguntas não respondidas.</span>
-            </div>
-          </div>
-          <div class="tech-list">
-            <span>OpenAI</span>
-            <span>FastAPI</span>
-            <span>Redis</span>
-            <span>PostgreSQL</span>
+          <div class="project-actions">
+            <span class="project-action-placeholder" title="Demo em breve">
+              <i data-lucide="play-circle" aria-hidden="true"></i>
+              Demo em breve
+            </span>
+            <a href="https://github.com/rbarbon90" target="_blank" rel="noreferrer">
+              <i data-lucide="github" aria-hidden="true"></i>
+              GitHub
+            </a>
           </div>
         </article>
       </div>

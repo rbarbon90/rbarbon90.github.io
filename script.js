@@ -91,3 +91,60 @@ if (samePageLinks.length > 0) {
     activeObserver.observe(section);
   });
 }
+
+let activeModalTrigger = null;
+
+const closeProjectModal = (modal) => {
+  const modalVideo = modal.querySelector("video");
+
+  if (modalVideo) {
+    modalVideo.pause();
+  }
+
+  modal.hidden = true;
+  document.body.classList.remove("modal-open");
+  activeModalTrigger?.focus();
+  activeModalTrigger = null;
+};
+
+document.querySelectorAll("[data-modal-open]").forEach((trigger) => {
+  trigger.addEventListener("click", () => {
+    const modal = document.getElementById(trigger.dataset.modalOpen);
+
+    if (!modal) {
+      return;
+    }
+
+    activeModalTrigger = trigger;
+    const modalMedia = modal.querySelector("[data-modal-src]");
+
+    if (modalMedia && !modalMedia.getAttribute("src")) {
+      modalMedia.setAttribute("src", modalMedia.dataset.modalSrc);
+      modalMedia.load?.();
+    }
+
+    modal.hidden = false;
+    document.body.classList.add("modal-open");
+    modal.querySelector(".project-modal-panel")?.focus();
+    modalMedia?.play?.().catch(() => {});
+    window.lucide?.createIcons();
+  });
+});
+
+document.querySelectorAll(".project-modal").forEach((modal) => {
+  modal.querySelectorAll("[data-modal-close]").forEach((control) => {
+    control.addEventListener("click", () => closeProjectModal(modal));
+  });
+});
+
+document.addEventListener("keydown", (event) => {
+  if (event.key !== "Escape") {
+    return;
+  }
+
+  const openModal = document.querySelector(".project-modal:not([hidden])");
+
+  if (openModal) {
+    closeProjectModal(openModal);
+  }
+});
